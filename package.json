@@ -1,0 +1,11 @@
+{
+  "name": "ogre-snatch",
+  "version": "1.0.0",
+  "description": "overwatch stat tracker based on the traversy media tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
+  "license": "ISC"
+}
