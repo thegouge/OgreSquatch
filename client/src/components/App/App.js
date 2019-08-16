@@ -11,17 +11,38 @@ import testData from "./response.json";
 
 function App() {
   // Change this initial value to "false" when ready to set the API
-  const [playerData, setPlayerData] = useState(testData);
+  const [playerData, setPlayerData] = useState(false);
 
   const makeSearchCall = async (platform, gamertag) => {
-    const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
+    // const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
 
-    setPlayerData(trimResponseData(response.json()));
+    setPlayerData(trimResponseData(testData));
   };
 
   const trimResponseData = (response) => {
     if (response.private) {
       return {name: response.name, private: true};
+    }
+
+    const heroStats = {};
+
+    for (let hero in response.quickPlayStats.careerStats) {
+      if (!heroStats[hero]) {
+        heroStats[hero] = {};
+        heroStats[hero].name = hero;
+      }
+      heroStats[hero].quick = response.quickPlayStats.careerStats[hero];
+    }
+
+    for (let hero in response.competitiveStats.careerStats) {
+      if (!heroStats[hero]) {
+        heroStats[hero] = {};
+        heroStats[hero].name = hero;
+      }
+      if (heroStats[hero].name === "allHeroes") {
+        heroStats[hero].name = "Global";
+      }
+      heroStats[hero].competitive = response.competitiveStats.careerStats[hero];
     }
 
     return {
@@ -40,8 +61,7 @@ function App() {
           ratingIcon: response.ratingIcon,
         },
       },
-      quickPlayStats: response.quickPlayStats,
-      competitiveStats: response.competitiveStats,
+      heroStats,
     };
   };
 
