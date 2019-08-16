@@ -1,14 +1,24 @@
 import React, {useState} from "react";
 
-import Tab from "../Tab";
+import ChosenHeroStats from "../ChosenHeroStats";
 
 const Profile = ({data}) => {
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("Global");
 
-  const renderedHeroes = Object.entries(data.heroStats).map((hero) => {
-    return <Tab key={hero[1].name} heroData={hero[1]} playMode={playMode} />;
+  const heroTabs = Object.entries(data.heroStats).map((hero) => {
+    if (hero[1][playMode]) {
+      return (
+        <li onClick={chooseHero(hero[0])} key={hero[1].name}>
+          {hero[1].name}
+        </li>
+      );
+    }
   });
+
+  const chooseHero = (name) => {
+    setSelectedHero(name);
+  };
 
   const changePlayMode = () => {
     if (playMode === "quick") {
@@ -34,7 +44,8 @@ const Profile = ({data}) => {
         {data.profile.name}
         <button onClick={changePlayMode}>{playMode} Play</button>
       </h2>
-      <ul id="profile-tags">{renderedHeroes}</ul>
+      <ul id="profile-tags">{heroTabs}</ul>
+      <ChosenHeroStats data={data.heroStats[selectedHero]} mode={playMode} />
     </div>
   );
 };
