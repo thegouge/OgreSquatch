@@ -1,5 +1,5 @@
 {
-  "name": "ogre-snatch",
+  "name": "ogre-squatch",
   "version": "1.0.0",
   "description": "overwatch stat tracker based on the traversy media tutorial",
   "main": "server.js",
