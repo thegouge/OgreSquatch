@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 
+import "./Search.css";
+
 const Search = (props) => {
   const [platform, setPlatform] = useState("pc");
   const [gamertag, setGamertag] = useState("");

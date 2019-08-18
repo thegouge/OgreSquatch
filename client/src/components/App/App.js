@@ -10,12 +10,12 @@ import "./App.css";
 import testData from "./response.json";
 
 function App() {
-  // Change this initial value to "false" when ready to set the API
   const [playerData, setPlayerData] = useState(false);
 
   const makeSearchCall = async (platform, gamertag) => {
     // const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
 
+    // Change this to "response" when linking to backend
     setPlayerData(trimResponseData(testData));
   };
 

@@ -2,20 +2,16 @@ import React, {useState} from "react";
 
 import ChosenHeroStats from "../ChosenHeroStats";
 
+import "./Profile.css";
+
 const Profile = ({data}) => {
+  console.log(data);
+
+  // State
   const [playMode, setPlaymode] = useState("quick");
-  const [selectedHero, setSelectedHero] = useState("Global");
+  const [selectedHero, setSelectedHero] = useState("allHeroes");
 
-  const heroTabs = Object.entries(data.heroStats).map((hero) => {
-    if (hero[1][playMode]) {
-      return (
-        <li onClick={chooseHero(hero[0])} key={hero[1].name}>
-          {hero[1].name}
-        </li>
-      );
-    }
-  });
-
+  // Methods
   const chooseHero = (name) => {
     setSelectedHero(name);
   };
@@ -28,6 +24,19 @@ const Profile = ({data}) => {
     }
   };
 
+  const heroTabs = Object.values(data.heroStats).map((hero) => {
+    if (hero[playMode]) {
+      return (
+        <li
+          className="hero-tab"
+          onClick={(e) => chooseHero(hero.name)}
+          key={hero.name}>
+          {hero.name}
+        </li>
+      );
+    }
+  });
+
   if (data.private) {
     return (
       <h2>
@@ -39,12 +48,16 @@ const Profile = ({data}) => {
 
   return (
     <div>
-      <h2 className="profile-slug">
-        <img src={data.profile.icons.icon} alt="account icon" />
+      <h2 id="profile-slug">
+        <img
+          id="player-icon"
+          src={data.profile.icons.icon}
+          alt="account icon"
+        />
         {data.profile.name}
         <button onClick={changePlayMode}>{playMode} Play</button>
       </h2>
-      <ul id="profile-tags">{heroTabs}</ul>
+      <ul id="hero-tab-list">{heroTabs}</ul>
       <ChosenHeroStats data={data.heroStats[selectedHero]} mode={playMode} />
     </div>
   );
