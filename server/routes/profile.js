@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const fetch = require("node-fetch");
 
+const trim = require("../lib/dataTrim");
+
 router.get("/:platform/:gamertag", async (req, res) => {
   try {
     const headers = {
@@ -23,7 +25,7 @@ router.get("/:platform/:gamertag", async (req, res) => {
     //   });
     // }
 
-    res.json(data);
+    res.json(trim(data));
   } catch (err) {
     console.error(err);
 
