@@ -5,8 +5,6 @@ import ChosenHeroStats from "../ChosenHeroStats";
 import "./Profile.css";
 
 const Profile = ({data}) => {
-  console.log(data);
-
   // State
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("allHeroes");
