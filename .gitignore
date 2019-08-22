@@ -1,5 +1,5 @@
-server/node_modules
-response.json
+/node_modules
+lib/response.json
 
 client/node_modules
 client/.pnp

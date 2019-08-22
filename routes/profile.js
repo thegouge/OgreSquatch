@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const fetch = require("node-fetch");
 
-const trim = require("../lib/dataTrim");
+const dataClass = require("../lib/trimmedData");
 
 router.get("/:platform/:gamertag", async (req, res) => {
   try {
@@ -25,7 +25,7 @@ router.get("/:platform/:gamertag", async (req, res) => {
     //   });
     // }
 
-    res.json(trim(data));
+    res.json(new dataClass(data));
   } catch (err) {
     console.error(err);
 
