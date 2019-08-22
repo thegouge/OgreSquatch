@@ -1,4 +1,4 @@
-const heroList = require("./masterHeroList.js");
+const heroList = require("./masterHeroList.js.js");
 
 class formattedData {
   constructor(data = {name: "default", private: true}) {
@@ -93,6 +93,6 @@ function trimHeroData(heroData) {
   };
 }
 
-const test = new formattedData(require("./response.json"));
+const test = new formattedData(require("./response.json.js"));
 
 module.exports = formattedData;

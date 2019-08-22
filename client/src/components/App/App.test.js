@@ -14,6 +14,8 @@ describe("App Component", () => {
   it("Should render without crashing", () => {
     const wrapper = findElementByDataTest(component, "AppComp");
 
+    console.log(wrapper);
+
     expect(wrapper.length).toBe(1);
   });
 });
