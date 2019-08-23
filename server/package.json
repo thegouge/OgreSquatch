@@ -1,19 +1,16 @@
 {
-  "name": "ogre-squatch",
+  "name": "server",
   "version": "1.0.0",
-  "description": "overwatch stat tracker based on the traversy media tutorial",
+  "description": "the server for Ogre Squatch",
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server",
-    "server": "nodemon server",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "nodemon server",
+    "client": "npm run start --prefix ../client"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.1",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
