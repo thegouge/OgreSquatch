@@ -4,14 +4,13 @@
   "description": "overwatch stat tracker based on the traversy media tutorial",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server --prefix server",
+    "server": "npm run start --prefix server",
     "client": "npm run start --prefix client",
     "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.1",
-    "nodemon": "^1.19.1"
+    "concurrently": "^4.1.1"
   }
 }

@@ -1,4 +1,4 @@
-const heroList = require("./masterHeroList.js.js");
+const heroList = require("./masterHeroList.js");
 
 class formattedData {
   constructor(data = {name: "default", private: true}) {
@@ -31,7 +31,6 @@ class formattedData {
         quick: {...data.quickPlayStats.topHeroes},
         comp: {...data.competitiveStats.topHeroes},
       };
-      console.log(this.heroes);
     }
   }
 }
@@ -92,7 +91,5 @@ function trimHeroData(heroData) {
     },
   };
 }
-
-const test = new formattedData(require("./response.json.js"));
 
 module.exports = formattedData;

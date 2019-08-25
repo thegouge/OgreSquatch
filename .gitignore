@@ -3,14 +3,13 @@ server/node_modules
 server/lib/response.json
 
 client/node_modules
+client/src/components/App/formattedResponse.json
 client/.pnp
 client/.pnp.js
 
 # testing
 client/coverage
 
-# production
-client/build
 
 # misc
 client/.DS_Store

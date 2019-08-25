@@ -1,5 +1,5 @@
-const formattedData = require("./trimmedData.js.js");
-const testResponse = require("./response.json.js");
+const formattedData = require("./trimmedData.js");
+const testResponse = require("./response.json");
 
 describe("Trimmed Data Object", () => {
   let testDataObject;

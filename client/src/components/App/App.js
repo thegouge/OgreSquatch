@@ -7,7 +7,7 @@ import Footer from "../Footer";
 
 import "./App.css";
 
-import testData from "./response.json";
+import testData from "./formattedResponse.json";
 
 function App() {
   const [playerData, setPlayerData] = useState(false);
@@ -15,7 +15,7 @@ function App() {
   const makeSearchCall = async (platform, gamertag) => {
     // const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
 
-    // Change this to "response" when linking to backend
+    // Change this to "response" when linking to backend 
     setPlayerData(testData);
   };
 

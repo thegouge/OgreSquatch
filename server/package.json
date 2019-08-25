@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server",
-    "client": "npm run start --prefix ../client"
+    "start": "nodemon server"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",

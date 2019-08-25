@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import "./Search.css";
 
-const Search = (props) => {
+const Search = ({callApi}) => {
   const [platform, setPlatform] = useState("pc");
   const [gamertag, setGamertag] = useState("");
 
@@ -37,7 +37,7 @@ const Search = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    props.callApi(platform, gamertag.replace(/#(?=\d{4})/, "-"));
+    callApi(platform, gamertag.replace(/#(?=\d{4})/, "-"));
   };
 
   return (
