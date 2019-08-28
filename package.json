@@ -2,7 +2,7 @@
   "name": "ogre-squatch",
   "version": "1.0.0",
   "description": "overwatch stat tracker based on the traversy media tutorial",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "server": "npm run start --prefix server",
     "client": "npm run start --prefix client",

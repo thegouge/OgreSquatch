@@ -1,28 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Profile from "./Profile";
+import {shallow} from "enzyme";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(
-    <Profile data={
-      {
-        profile: {
-          name: "test profile", 
-          icons: {
-            icon: "#"
-          }
-        }, 
-        heroStats: {
-          "allHeroes": {
-            name: "allHeroes",
-            quick: {
-            }
-          }
-        }
-      }
-    } />,
-    div
-  );
-  ReactDOM.unmountComponentAtNode(div);
+import Profile from "./index";
+import {findElementByDataTest} from "../../lib/testFunctions";
+
+describe("Profile Component", () => {
+  let component;
+
+  beforeEach(() => {
+    component = shallow(<Profile />);
+  });
+  it("Should render without crashing", () => {
+    const wrapper = findElementByDataTest(component, "profileComp");
+
+    expect(wrapper.length).toBe(1);
+  });
 });

@@ -41,9 +41,9 @@ const Search = ({callApi}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} data-test="searchComp">
       <div className="form-group">
-        <label htmlFor="platform" />
+        <label htmlFor="platform">Game Platform</label>
         <select
           name="platform"
           id="platform"
@@ -57,10 +57,10 @@ const Search = ({callApi}) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="battle-tag" />
+        <label htmlFor="username">User Name</label>
         <input
-          name="battle-tag"
-          id="battle-tag"
+          name="username"
+          id="username"
           onChange={handleTagChange}
           value={gamertag}
           placeholder={placeholderText}

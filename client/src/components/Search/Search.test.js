@@ -1,9 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Search from "./Search";
+import {shallow} from "enzyme";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Search />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import Search from "./index";
+import {findElementByDataTest} from "../../lib/testFunctions";
+
+describe("Search Component", () => {
+  let component;
+
+  beforeEach(() => {
+    component = shallow(<Search />);
+  });
+  it("Should render without crashing", () => {
+    const wrapper = findElementByDataTest(component, "searchComp");
+
+    expect(wrapper.length).toBe(1);
+  });
 });

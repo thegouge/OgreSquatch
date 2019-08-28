@@ -1,16 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {shallow} from "enzyme";
 
-import ChosenHeroStats from "./ChosenHeroStats";
+import ChosenHeroStats from "./index";
+import {findElementByDataTest} from "../../lib/testFunctions";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(
-    <ChosenHeroStats
-      data={{name: "test hero"}}
-      mode={"quick"}
-    />,
-    div
-  );
-  ReactDOM.unmountComponentAtNode(div);
+describe("ChosenHeroStats Component", () => {
+  let component;
+
+  beforeEach(() => {
+    component = shallow(<ChosenHeroStats />);
+  });
+  it("Should render without crashing", () => {
+    const wrapper = findElementByDataTest(component, "chosenComp");
+
+    expect(wrapper.length).toBe(1);
+  });
 });

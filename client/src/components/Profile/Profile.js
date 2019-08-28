@@ -45,7 +45,7 @@ const Profile = ({data}) => {
   }
 
   return (
-    <div>
+    <div data-test="profileComp">
       <h2 id="profile-slug">
         <img
           id="player-icon"
