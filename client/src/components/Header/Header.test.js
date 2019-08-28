@@ -1,9 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./Header";
+import {shallow} from "enzyme";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Header />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import Header from "./index";
+import {findElementByDataTest} from "../../lib/testFunctions";
+
+describe("Header Component", () => {
+  let component;
+
+  beforeEach(() => {
+    component = shallow(<Header />);
+  });
+  it("Should render without crashing", () => {
+    const wrapper = findElementByDataTest(component, "headerComp");
+
+    expect(wrapper.length).toBe(1);
+  });
 });

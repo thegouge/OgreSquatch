@@ -1,9 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Footer from "./Footer";
+import {shallow} from "enzyme";
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Footer />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import Footer from "./index";
+import {findElementByDataTest} from "../../lib/testFunctions";
+
+describe("Footer Component", () => {
+  let component;
+
+  beforeEach(() => {
+    component = shallow(<Footer />);
+  });
+  it("Should render without crashing", () => {
+    const wrapper = findElementByDataTest(component, "footerComp");
+
+    expect(wrapper.length).toBe(1);
+  });
 });

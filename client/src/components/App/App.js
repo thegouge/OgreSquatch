@@ -7,7 +7,7 @@ import Footer from "../Footer";
 
 import "./App.css";
 
-import testData from "./response.json";
+import testData from "./formattedResponse.json";
 
 function App() {
   const [playerData, setPlayerData] = useState(false);
@@ -15,54 +15,8 @@ function App() {
   const makeSearchCall = async (platform, gamertag) => {
     // const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
 
-    // Change this to "response" when linking to backend
-    setPlayerData(trimResponseData(testData));
-  };
-
-  const trimResponseData = (response) => {
-    if (response.private) {
-      return {name: response.name, private: true};
-    }
-
-    const heroStats = {};
-
-    for (let hero in response.quickPlayStats.careerStats) {
-      if (!heroStats[hero]) {
-        heroStats[hero] = {};
-        heroStats[hero].name = hero;
-      }
-      heroStats[hero].quick = response.quickPlayStats.careerStats[hero];
-    }
-
-    for (let hero in response.competitiveStats.careerStats) {
-      if (!heroStats[hero]) {
-        heroStats[hero] = {};
-        heroStats[hero].name = hero;
-      }
-      if (heroStats[hero].name === "allHeroes") {
-        heroStats[hero].name = "Global";
-      }
-      heroStats[hero].competitive = response.competitiveStats.careerStats[hero];
-    }
-
-    return {
-      profile: {
-        name: response.name,
-        level: response.level,
-        endorsement: response.endorsement,
-        prestige: response.prestige,
-        rating: response.rating,
-        gamesWon: response.gamesWon,
-        icons: {
-          icon: response.icon,
-          levelIcon: response.levelIcon,
-          endorsementIcon: response.endorsementIcon,
-          prestigeIcon: response.prestigeIcon,
-          ratingIcon: response.ratingIcon,
-        },
-      },
-      heroStats,
-    };
+    // Change this to "response" when linking to backend 
+    setPlayerData(testData);
   };
 
   const visibleComponent = playerData ? (
@@ -71,7 +25,7 @@ function App() {
     <Search callApi={makeSearchCall} />
   );
   return (
-    <div className="App">
+    <div className="App" data-test="AppComp">
       <Header />
       {visibleComponent}
       <Footer />

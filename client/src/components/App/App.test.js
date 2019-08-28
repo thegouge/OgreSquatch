@@ -1,21 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {shallow} from "enzyme";
 
-import App from "./App";
+import App from "./index";
+import {findElementByDataTest} from "../../lib/testFunctions";
 
-let container;
+describe("App Component", () => {
+  let component;
 
-beforeEach(() => {
-  container = document.createElement("div");
-  document.body.appendChild(container);
-});
+  beforeEach(() => {
+    component = shallow(<App />);
+  });
 
-afterEach(() => {
-  ReactDOM.unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
+  it("Should render without crashing", () => {
+    const wrapper = findElementByDataTest(component, "AppComp");
 
-it("renders without crashing", () => {
-  ReactDOM.render(<App />, container);
+    console.log(wrapper);
+
+    expect(wrapper.length).toBe(1);
+  });
 });

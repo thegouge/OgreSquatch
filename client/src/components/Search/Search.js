@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import "./Search.css";
 
-const Search = (props) => {
+const Search = ({callApi}) => {
   const [platform, setPlatform] = useState("pc");
   const [gamertag, setGamertag] = useState("");
 
@@ -37,13 +37,13 @@ const Search = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    props.callApi(platform, gamertag.replace(/#(?=\d{4})/, "-"));
+    callApi(platform, gamertag.replace(/#(?=\d{4})/, "-"));
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} data-test="searchComp">
       <div className="form-group">
-        <label htmlFor="platform" />
+        <label htmlFor="platform">Game Platform</label>
         <select
           name="platform"
           id="platform"
@@ -57,10 +57,10 @@ const Search = (props) => {
       </div>
 
       <div className="form-group">
-        <label htmlFor="battle-tag" />
+        <label htmlFor="username">User Name</label>
         <input
-          name="battle-tag"
-          id="battle-tag"
+          name="username"
+          id="username"
           onChange={handleTagChange}
           value={gamertag}
           placeholder={placeholderText}
