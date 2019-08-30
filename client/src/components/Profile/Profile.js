@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
+import {useFetch} from "../../lib/hooks";
 
 import ChosenHero from "../ChosenHero";
-
-import testData from "./formattedResponse.json";
+import Loading from "../Loading";
 
 import "./Profile.css";
 
@@ -11,21 +11,9 @@ const Profile = ({match}) => {
   // State
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("allHeroes");
-  const [playerData, setPlayerData] = useState(testData);
-
-  // Lifecycle
-  // useEffect(() => {
-  //   makeSearchCall();
-  // }, []);
-
-  const makeSearchCall = async () => {
-    const {platform, gamertag} = match.params;
-
-    const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
-
-    // Change this to "response" when linking to backend
-    setPlayerData(response);
-  };
+  const [playerData, loading] = useFetch(
+    `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`
+  );
 
   // Methods
   const chooseHero = (name) => {
@@ -40,7 +28,10 @@ const Profile = ({match}) => {
     }
   };
 
-  if (playerData.private) {
+  // Boolean Flags
+  if (loading) {
+    return <Loading />;
+  } else if (playerData.private) {
     return (
       <h2>
         The account {playerData.name} is private. They will have to set their
@@ -50,7 +41,6 @@ const Profile = ({match}) => {
   }
 
   const heroTabs = Object.values(playerData.heroes).map((hero) => {
-    console.log("first?");
     return (
       <li
         className="hero-tab"
