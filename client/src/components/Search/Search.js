@@ -1,10 +1,13 @@
 import React, {useState} from "react";
+import {Redirect} from "react-router-dom";
 
 import "./Search.css";
 
-const Search = ({callApi}) => {
+const Search = () => {
+  // State
   const [platform, setPlatform] = useState("pc");
-  const [gamertag, setGamertag] = useState("");
+  const [gamertag, setGamertag] = useState("TheGouge#1273");
+  const [ready, setReady] = useState(false);
 
   let placeholderText = "";
 
@@ -26,6 +29,7 @@ const Search = ({callApi}) => {
       break;
   }
 
+  // Methods
   const handlePlatformChange = (event) => {
     setPlatform(event.target.value);
   };
@@ -37,8 +41,16 @@ const Search = ({callApi}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    callApi(platform, gamertag.replace(/#(?=\d{4})/, "-"));
+    if (platform === "pc") {
+      setGamertag(gamertag.replace(/#(?=\d{4})/, "-"));
+    }
+
+    setReady(true);
   };
+
+  if (ready) {
+    return <Redirect to={`/profile/${platform}/${gamertag}`} />;
+  }
 
   return (
     <form onSubmit={handleSubmit} data-test="searchComp">

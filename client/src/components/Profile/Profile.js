@@ -1,13 +1,31 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+import {Link} from "react-router-dom";
 
-import ChosenHeroStats from "../ChosenHeroStats";
+import ChosenHero from "../ChosenHero";
+
+import testData from "./formattedResponse.json";
 
 import "./Profile.css";
 
-const Profile = ({data}) => {
+const Profile = ({match}) => {
   // State
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("allHeroes");
+  const [playerData, setPlayerData] = useState(testData);
+
+  // Lifecycle
+  // useEffect(() => {
+  //   makeSearchCall();
+  // }, []);
+
+  const makeSearchCall = async () => {
+    const {platform, gamertag} = match.params;
+
+    const response = await fetch(`/api/v1/profile/${platform}/${gamertag}`);
+
+    // Change this to "response" when linking to backend
+    setPlayerData(response);
+  };
 
   // Methods
   const chooseHero = (name) => {
@@ -22,41 +40,41 @@ const Profile = ({data}) => {
     }
   };
 
-  const heroTabs = Object.values(data.heroStats).map((hero) => {
-    if (hero[playMode]) {
-      return (
-        <li
-          className="hero-tab"
-          onClick={(e) => chooseHero(hero.name)}
-          key={hero.name}>
-          {hero.name}
-        </li>
-      );
-    }
-  });
-
-  if (data.private) {
+  if (playerData.private) {
     return (
       <h2>
-        The account {data.name} is private. They will have to set their account
-        in Overwatch to public in order to display their stats
+        The account {playerData.name} is private. They will have to set their
+        account in Overwatch to public in order to display their stats
       </h2>
     );
   }
 
+  const heroTabs = Object.values(playerData.heroes).map((hero) => {
+    console.log("first?");
+    return (
+      <li
+        className="hero-tab"
+        onClick={(e) => chooseHero(hero.name)}
+        key={hero.name}>
+        {hero.name}
+      </li>
+    );
+  });
+
   return (
-    <div data-test="profileComp">
+    <div playerData-test="profileComp">
       <h2 id="profile-slug">
         <img
           id="player-icon"
-          src={data.profile.icons.icon}
+          src={playerData.profile.icons.icon}
           alt="account icon"
         />
-        {data.profile.name}
+        {playerData.profile.name}
         <button onClick={changePlayMode}>{playMode} Play</button>
       </h2>
       <ul id="hero-tab-list">{heroTabs}</ul>
-      <ChosenHeroStats data={data.heroStats[selectedHero]} mode={playMode} />
+      <ChosenHero heroData={playerData.heroes[selectedHero]} mode={playMode} />
+      <Link to="/">Go Back</Link>
     </div>
   );
 };

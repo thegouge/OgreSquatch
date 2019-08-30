@@ -1,0 +1,12 @@
+header {
+  font-family: "bignoodletoo";
+  width: 100%;
+  text-align: left;
+  padding: 50px 10px 10px 50px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: normal;
+}
