@@ -12,6 +12,8 @@ router.get("/:platform/:gamertag", async (req, res) => {
 
     const {platform, gamertag} = req.params;
 
+    console.log(`get request for ${gamertag}'s profile on ${platform}`);
+
     const response = await fetch(
       `${process.env.TRACKER_API_URL}/${platform}/${gamertag}`,
       {headers}

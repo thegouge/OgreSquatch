@@ -7,7 +7,7 @@ class formattedData {
       this.private = true;
     } else {
       this.profile = {
-        name: data.name,
+        name: data.name == "allHeroes" ? "Global" : data.name,
         level: data.level,
         endorsement: data.endorsement,
         prestige: data.prestige,
@@ -23,14 +23,9 @@ class formattedData {
       };
 
       this.heroes = mapThroughHeroes(
-        data.quickPlayStats.careerStats,
-        data.competitiveStats.careerStats
+        data.quickPlayStats,
+        data.competitiveStats
       );
-
-      this.topHeroes = {
-        quick: {...data.quickPlayStats.topHeroes},
-        comp: {...data.competitiveStats.topHeroes},
-      };
     }
   }
 }
@@ -38,8 +33,14 @@ class formattedData {
 function mapThroughHeroes(quickData, compData) {
   const result = {};
   heroList.forEach((hero) => {
-    const trimmedQuick = trimHeroData(quickData[hero]);
-    const trimmedComp = trimHeroData(compData[hero]);
+    const trimmedQuick = trimHeroData(
+      quickData.careerStats[hero],
+      quickData.topHeroes[hero]
+    );
+    const trimmedComp = trimHeroData(
+      compData.careerStats[hero],
+      compData.topHeroes[hero]
+    );
 
     result[hero] = {
       name: hero,
@@ -50,7 +51,7 @@ function mapThroughHeroes(quickData, compData) {
   return result;
 }
 
-function trimHeroData(heroData) {
+function trimHeroData(heroData, top) {
   if (!heroData) {
     return "no data!";
   }
@@ -76,6 +77,9 @@ function trimHeroData(heroData) {
 
   const addedAssists =
     assists.defensiveAssists + assists.offensiveAssists + assists.reconAssists;
+
+  const topHero = top ? true : false;
+
   return {
     assists: addedAssists,
     damageDone: combat.damageDone,
@@ -83,6 +87,7 @@ function trimHeroData(heroData) {
     eliminations: combat.eliminations,
     gamesWon: game.gamesWon,
     timePlayed: game.timePlayed,
+    topHero,
     medals: {
       total: matchAwards.medals,
       bronze: matchAwards.medalsBronze,

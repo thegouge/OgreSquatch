@@ -21,7 +21,7 @@ const masterHeroList = [
   "reinhardt",
   "roadhog",
   "sigma",
-  "sodldier76",
+  "soldier76",
   "sombra",
   "symmetra",
   "torbjorn",
