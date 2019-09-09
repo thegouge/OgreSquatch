@@ -1,53 +1,71 @@
 #profile-window {
   font-family: "bignoodletoo";
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  background: gold;
 }
 
-.profile-header {
-  font-family: "koverwatch";
-  display: flex;
+#hero-list {
+  position: relative;
+  width: 30%;
 }
 
 #hero-tab-list {
-  position: relative;
-  list-style: none;
-  display: grid;
-  width: 90%;
-  margin: auto;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(2, 110px);
-  padding-inline-start: 0;
+  overflow-y: scroll;
+  max-height: 500px;
+  margin: 5px;
+  border: 3px solid orangered;
 }
 
 .hero-tab {
-  position: relative;
-  bottom: 0;
+  height: 100px;
   z-index: 1;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: left;
   transition: 0.5s;
+  padding: 5px 10px;
+  border-top: 3px solid silver;
   background: white;
 }
 
-.hero-tab:hover {
-  font-size: 25px;
-  height: 140%;
-  width: 120%;
-  bottom: 20px;
-  z-index: 10;
+#Global-tab {
+  border-top: silver;
+}
+
+.image-wrapper {
+  width: 30%;
+  position: relative;
+  border: 3px solid black;
+  background-color: rgba(68, 180, 214, 0.9);
+  background-clip: padding-box;
+  overflow: hidden;
+  border-radius: 7px;
+  -webkit-transform: skew(25rad);
+  transform: skew(25rad) translateX(5px);
 }
 
 .hero-portrait {
-  display: block;
-  width: 100%;
+  transform: skew(-25rad) translateX(-5px);
 }
 
 #Global-portrait {
-  margin-top: 10px;
+  position: relative;
+  left: 6px;
+  top: 2px;
+  width: 90px;
+}
+
+.hero-text {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.profile-info {
+  width: 65%;
+}
+
+.profile-slug {
+  display: flex;
 }

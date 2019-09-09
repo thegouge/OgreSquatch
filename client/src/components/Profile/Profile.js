@@ -5,6 +5,8 @@ import {useFetch} from "../../lib/hooks";
 import ChosenHero from "../ChosenHero";
 import Loading from "../Loading";
 
+import logo from "../../assets/images/logo.png";
+
 import "./Profile.css";
 
 const Profile = ({match}) => {
@@ -49,18 +51,25 @@ const Profile = ({match}) => {
   const heroTabs = Object.values(playerData.heroes).map((hero) => {
     if (!topHeroView || (topHeroView && hero[playMode].topHero)) {
       return (
-        <li
+        <div
           className="hero-tab"
           onClick={(e) => chooseHero(hero.name)}
-          key={`${hero.name}-tab`}>
-          {hero.name}
-          <img
-            className="hero-portrait"
-            id={`${hero.name}-portrait`}
-            src={`/heroPics/${hero.name}.png`}
-            alt={`${hero.name} tab portrait`}
-          />
-        </li>
+          key={`${hero.name}-tab`}
+          id={`${hero.name}-tab`}>
+          <span className="image-wrapper">
+            <img
+              className="hero-portrait"
+              id={`${hero.name}-portrait`}
+              src={
+                hero.name === "Global"
+                  ? logo
+                  : `https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name}/icon-portrait.png`
+              }
+              alt={`${hero.name} tab portrait`}
+            />
+          </span>
+          <p className="hero-text">{hero.name}</p>
+        </div>
       );
     } else {
       return null;
@@ -69,25 +78,30 @@ const Profile = ({match}) => {
 
   return (
     <div id="profile-window" data-test="profileComp">
-      <div className="profile-header">
+      <div id="hero-list">
+        <button onClick={toggleTopView}>
+          Change to {topHeroView ? "all" : "top"} heroes
+        </button>
+        <div id="hero-tab-list">{heroTabs}</div>
+      </div>
+
+      <div className="profile-info">
         <h2 id="profile-slug">
-          {playerData.profile.name}
           <img
             id="player-icon"
             src={playerData.profile.icons.profileIcon}
             alt="account icon"
           />
+          {playerData.profile.name}
         </h2>
-        <div className="toolbar">
-          <button onClick={changePlayMode}>{playMode} Play</button>
-          <button onClick={toggleTopView}>
-            Change to {topHeroView ? "all" : "top"} heroes
-          </button>
-        </div>
+        <button onClick={changePlayMode}>{playMode} Play</button>
+        <ChosenHero
+          heroData={playerData.heroes[selectedHero]}
+          mode={playMode}
+        />
+
+        <Link to="/">Go Back</Link>
       </div>
-      <ul id="hero-tab-list">{heroTabs}</ul>
-      <ChosenHero heroData={playerData.heroes[selectedHero]} mode={playMode} />
-      <Link to="/">Go Back</Link>
     </div>
   );
 };

@@ -2,11 +2,12 @@ header {
   font-family: "koverwatch";
   width: 100%;
   text-align: left;
-  padding: 0 10px 10px 50px;
+  padding-left: 50px;
   box-sizing: border-box;
 }
 
 header h1 {
   font-size: 60px;
   font-weight: normal;
+  margin-bottom: 10px;
 }

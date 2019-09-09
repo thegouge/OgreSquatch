@@ -1,0 +1,13 @@
+#profile-search {
+  padding: 10px;
+  min-height: 500px;
+}
+
+.search-header {
+  font-family: "bignoodletoo";
+  margin-top: 0;
+  text-align: left;
+  padding-left: 40px;
+  font-size: 40px;
+  font-weight: normal;
+}

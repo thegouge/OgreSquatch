@@ -5,7 +5,7 @@ import "./Search.css";
 
 const Search = () => {
   // State
-  const [platform, setPlatform] = useState("pc");
+  const [platform, setPlatform] = useState("");
   const [gamertag, setGamertag] = useState("TheGouge#1273");
   const [ready, setReady] = useState(false);
 
@@ -53,34 +53,44 @@ const Search = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} data-test="searchComp">
-      <div className="form-group">
-        <label htmlFor="platform">Game Platform</label>
-        <select
-          name="platform"
-          id="platform"
-          type="select"
-          defaultValue="pc"
-          onChange={handlePlatformChange}>
-          <option value="pc">Battle.Net</option>
-          <option value="psn">PlayStation</option>
-          <option value="xbl">Xbox Live</option>
-        </select>
-      </div>
+    <div id="profile-search" data-test="searchComp">
+      <h2 className="search-header">
+        Find out if your friends need to stay on the payload!
+      </h2>
+      <form
+        onKeyPress={(e) => {
+          if (e.key === "Enter") handleSubmit(e);
+        }}
+        onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="platform">Game Platform</label>
+          <select
+            name="platform"
+            id="platform"
+            type="select"
+            defaultValue=""
+            onChange={handlePlatformChange}>
+            <option value="">Choose a Platform</option>
+            <option value="pc">Battle.Net</option>
+            <option value="psn">PlayStation</option>
+            <option value="xbl">Xbox Live</option>
+          </select>
+        </div>
 
-      <div className="form-group">
-        <label htmlFor="username">User Name</label>
-        <input
-          name="username"
-          id="username"
-          onChange={handleTagChange}
-          value={gamertag}
-          placeholder={placeholderText}
-        />
-      </div>
+        <div className="form-group">
+          <label htmlFor="username">User Name</label>
+          <input
+            name="username"
+            id="username"
+            onChange={handleTagChange}
+            value={gamertag}
+            placeholder={placeholderText}
+          />
+        </div>
 
-      <input type="submit" />
-    </form>
+        <input type="submit" />
+      </form>
+    </div>
   );
 };
 
