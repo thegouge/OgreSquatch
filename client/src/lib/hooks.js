@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-import testData from "./formattedResponse.json";
+import testData from "./currentPlayer.json";
 
 export function useFetch(url) {
   // const [data, setData] = useState([]);

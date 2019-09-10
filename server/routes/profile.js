@@ -27,7 +27,7 @@ router.get("/:platform/:gamertag", async (req, res) => {
     //   });
     // }
 
-    res.json(new dataClass(data));
+    res.json(new dataClass(data, platform));
   } catch (err) {
     console.error(err);
 

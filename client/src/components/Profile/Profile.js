@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import {useFetch} from "../../lib/hooks";
 
-import ChosenHero from "../ChosenHero";
+import Stats from "../Stats";
 import Loading from "../Loading";
 
 import logo from "../../assets/images/logo.png";
@@ -12,7 +12,7 @@ import "./Profile.css";
 const Profile = ({match}) => {
   // State
   const [playMode, setPlaymode] = useState("quick");
-  const [selectedHero, setSelectedHero] = useState("Global");
+  const [selectedHero, setSelectedHero] = useState("all-Heroes");
   const [playerData, loading] = useFetch(
     `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`
   );
@@ -61,7 +61,7 @@ const Profile = ({match}) => {
               className="hero-portrait"
               id={`${hero.name}-portrait`}
               src={
-                hero.name === "Global"
+                hero.name === "all-Heroes"
                   ? logo
                   : `https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name}/icon-portrait.png`
               }
@@ -85,23 +85,14 @@ const Profile = ({match}) => {
         <div id="hero-tab-list">{heroTabs}</div>
       </div>
 
-      <div className="profile-info">
-        <h2 id="profile-slug">
-          <img
-            id="player-icon"
-            src={playerData.profile.icons.profileIcon}
-            alt="account icon"
-          />
-          {playerData.profile.name}
-        </h2>
-        <button onClick={changePlayMode}>{playMode} Play</button>
-        <ChosenHero
-          heroData={playerData.heroes[selectedHero]}
-          mode={playMode}
-        />
+      <Stats
+        profile={playerData.profile}
+        heroData={playerData.heroes[selectedHero]}
+        mode={playMode}
+        changePlayMode={changePlayMode}
+      />
 
-        <Link to="/">Go Back</Link>
-      </div>
+      <Link to="/">Go Back</Link>
     </div>
   );
 };

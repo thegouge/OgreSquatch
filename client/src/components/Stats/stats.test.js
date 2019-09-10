@@ -1,17 +1,17 @@
 import React from "react";
 import {shallow} from "enzyme";
 
-import ChosenHeroStats from "./index";
+import Stats from "./index";
 import {findElementByDataTest} from "../../lib/testFunctions";
 
-describe("ChosenHeroStats Component", () => {
+describe("Stats Component", () => {
   let component;
 
   beforeEach(() => {
-    component = shallow(<ChosenHeroStats />);
+    component = shallow(<Stats />);
   });
   it("Should render without crashing", () => {
-    const wrapper = findElementByDataTest(component, "chosenComp");
+    const wrapper = findElementByDataTest(component, "statsComp");
 
     expect(wrapper.length).toBe(1);
   });

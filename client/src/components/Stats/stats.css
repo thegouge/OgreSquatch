@@ -1,0 +1,59 @@
+#chosen-hero {
+  background: rgb(226, 226, 226);
+  display: grid;
+  grid-template-areas: "";
+}
+
+#profile-info {
+  width: 65%;
+}
+
+#profile-slug {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 10px;
+}
+
+#player-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+}
+
+.username {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.level-icon {
+  position: relative;
+  width: 100px;
+}
+
+#prestige {
+  position: relative;
+  left: -100px;
+}
+
+.banner {
+  margin: 0;
+  text-align: left;
+}
+
+.printout {
+  display: grid;
+  grid-template-areas:
+    "time won"
+    "kills deaths"
+    "assists quote";
+}
+
+.medals {
+  grid-area: medals;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}

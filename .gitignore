@@ -4,6 +4,7 @@ response.json
 
 client/node_modules
 formattedResponse.json
+currentPlayer.json
 client/.pnp
 client/.pnp.js
 

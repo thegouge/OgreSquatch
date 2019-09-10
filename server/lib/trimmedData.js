@@ -1,13 +1,17 @@
 const heroList = require("./masterHeroList.js");
 
 class formattedData {
-  constructor(data = {name: "default", private: true}) {
+  constructor(data = {name: "default", private: true}, platform) {
     if (data.private) {
       this.name = data.name;
       this.private = true;
     } else {
+      let name = data.name;
+      if (platform === "pc") {
+        name = data.name.replace(/#\d+$/, "");
+      }
       this.profile = {
-        name: data.name == "allHeroes" ? "Global" : data.name,
+        name,
         level: data.level,
         endorsement: data.endorsement,
         prestige: data.prestige,

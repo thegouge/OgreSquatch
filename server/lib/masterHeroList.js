@@ -1,5 +1,5 @@
 const masterHeroList = [
-  "allHeroes",
+  "all-Heroes",
   "ana",
   "ashe",
   "baptiste",
