@@ -26,11 +26,13 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
             alt="level Icon"
           />
         )}
-        <img
-          src={heroPortrait}
-          alt="Selected Hero"
-          className="curr-hero-port"
-        />
+        {heroPortrait && (
+          <img
+            src={heroPortrait}
+            alt="Selected Hero"
+            className="curr-hero-port"
+          />
+        )}
         {profile.icons.prestigeIcon && (
           <img
             className="level-icon"
