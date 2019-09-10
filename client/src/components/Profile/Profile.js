@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
 import {useFetch} from "../../lib/hooks";
 
 import Stats from "../Stats";
@@ -91,8 +90,6 @@ const Profile = ({match}) => {
         mode={playMode}
         changePlayMode={changePlayMode}
       />
-
-      <Link to="/">Go Back</Link>
     </div>
   );
 };

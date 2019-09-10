@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 import "./stats.css";
 
@@ -25,7 +26,11 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
             alt="level Icon"
           />
         )}
-        <img src={heroPortrait} alt="" className="curr-hero-port" />
+        <img
+          src={heroPortrait}
+          alt="Selected Hero"
+          className="curr-hero-port"
+        />
         {profile.icons.prestigeIcon && (
           <img
             className="level-icon"
@@ -50,7 +55,7 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
         </div>
         <button onClick={changePlayMode}>{mode}</button>
         <div id="chosen-hero">
-          <article className="banner">
+          <article className="hero">
             {heroData.name} ({mode})
           </article>
           <article className="medals">
@@ -69,6 +74,7 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
             <div className="printed-stat">Games Won: {data.gamesWon} </div>
           </article>
         </div>
+        <Link to="/">Go Back</Link>
       </div>
     );
   }
