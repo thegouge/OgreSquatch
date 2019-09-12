@@ -63,9 +63,8 @@ const Search = () => {
         }}
         onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="platform">Game Platform</label>
           <select
-            name="platform"
+            className="form-input"
             id="platform"
             type="select"
             defaultValue=""
@@ -78,9 +77,8 @@ const Search = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="username">User Name</label>
           <input
-            name="username"
+            className="form-input"
             id="username"
             onChange={handleTagChange}
             value={gamertag}
@@ -88,7 +86,7 @@ const Search = () => {
           />
         </div>
 
-        <input type="submit" />
+        <input id="submit" type="submit" />
       </form>
     </div>
   );

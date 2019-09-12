@@ -1,6 +1,11 @@
 #profile-search {
   padding: 10px;
-  min-height: 500px;
+  margin: auto;
+  min-height: 300px;
+  width: 50%;
+  border: 5px solid silver;
+  border-radius: 7px;
+  margin-bottom: 50px;
 }
 
 .search-header {
@@ -10,4 +15,39 @@
   padding-left: 40px;
   font-size: 40px;
   font-weight: normal;
+}
+
+#profile-search form {
+  display: grid;
+  grid-template-areas: "platform name" "submit submit";
+  height: 100%;
+}
+
+.form-group {
+  margin: auto;
+  padding: 2px;
+  height: 50px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 50%;
+  padding: 1px 0;
+}
+
+#platform {
+  grid-area: platform;
+}
+
+#name {
+  grid-area: name;
+}
+
+#submit {
+  display: block;
+  grid-area: submit;
+  width: 50%;
+  height: 50px;
+  margin: auto;
 }
