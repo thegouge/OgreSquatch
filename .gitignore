@@ -3,7 +3,7 @@ server/node_modules
 response.json
 
 client/node_modules
-formattedResponse.json
+formatted.json
 currentPlayer.json
 client/.pnp
 client/.pnp.js

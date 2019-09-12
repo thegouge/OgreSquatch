@@ -46,6 +46,27 @@ function mapThroughHeroes(quickData, compData) {
       compData.topHeroes[hero]
     );
 
+    switch (hero) {
+      case "allHeroes":
+        hero = "all-Heroes";
+        break;
+
+      case "dVa":
+        hero = "dva";
+        break;
+
+      case "soldier76":
+        hero = "soldier-76";
+        break;
+
+      case "wreckingBall":
+        hero = "wrecking-ball";
+        break;
+
+      default:
+        break;
+    }
+
     result[hero] = {
       name: hero,
       quick: trimmedQuick,
