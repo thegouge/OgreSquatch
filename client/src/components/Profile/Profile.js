@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {useFetch} from "../../lib/hooks";
+import {formatHeroName} from "../../lib/functions";
 
 import Stats from "../Stats";
 import Loading from "../Loading";
@@ -67,7 +68,7 @@ const Profile = ({match}) => {
               alt={`${hero.name} tab portrait`}
             />
           </span>
-          <p className="hero-text">{hero.name}</p>
+          <p className="hero-text">{formatHeroName(hero.name)}</p>
         </div>
       );
     } else {
