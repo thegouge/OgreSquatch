@@ -38,7 +38,7 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
           />
         )}
         <img
-          src={require(`../../assets/images/${heroData.name}.png`)}
+          src={require(`../../assets/images/heroes/${heroData.name}.png`)}
           alt="Selected Hero"
           className="curr-hero-port"
         />
@@ -78,17 +78,52 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
           </h4>
         </article>
         <article className="medals">
-          Medals:
-          <div className="printed-stat">Bronze: {data.medals.bronze}</div>
-          <div className="printed-stat">Silver: {data.medals.silver}</div>
-          <div className="printed-stat">Gold: {data.medals.gold}</div>
+          <div className="printed-medal">
+            <img
+              src={require("../../assets/images/medals/bronze.png")}
+              alt=""
+              className="medal-img"
+            />
+            <p className="medal-number">{data.medals.bronze}</p>
+          </div>
+          <div className="printed-medal">
+            <img
+              src={require("../../assets/images/medals/silver.png")}
+              alt=""
+              className="medal-img"
+            />
+            <p className="medal-number">{data.medals.silver}</p>
+          </div>
+          <div className="printed-medal">
+            <img
+              src={require("../../assets/images/medals/gold.png")}
+              alt=""
+              className="medal-img"
+            />
+            <p className="medal-number">{data.medals.gold}</p>
+          </div>
         </article>
         <article className="printout">
-          <div className="printed-stat">Time Played: {data.timePlayed} </div>
-          <div className="printed-stat">Eliminations: {data.eliminations} </div>
-          <div className="printed-stat">Deaths: {data.deaths} </div>
-          <div className="printed-stat">Assists: {data.assists} </div>
-          <div className="printed-stat">Games Won: {data.gamesWon} </div>
+          <div className="printed-stat">
+            <span className="stat-title">Time</span>
+            <span className="stat-stat">{data.timePlayed}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Kills</span>
+            <span className="stat-stat">{data.eliminations}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Deaths</span>
+            <span className="stat-stat">{data.deaths}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Assists</span>
+            <span className="stat-stat">{data.assists}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Wins</span>
+            <span className="stat-stat">{data.gamesWon}</span>
+          </div>
         </article>
       </div>
       <Link to="/" className="back-link">

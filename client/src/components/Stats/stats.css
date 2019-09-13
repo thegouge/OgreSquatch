@@ -58,12 +58,14 @@
 #chosen-hero {
   --background-overlay: rgba(266, 266, 266, 0.6);
 
-  height: 60%;
+  box-sizing: border-box;
+  height: 66%;
   background-color: rgb(226, 226, 226);
   display: grid;
   grid-template-areas:
     "hero printout"
     "medals printout";
+  grid-template-columns: 66% 34%;
 }
 
 .hero {
@@ -78,21 +80,81 @@
 }
 
 .printout {
+  box-sizing: border-box;
   grid-area: printout;
   display: grid;
   grid-template-areas:
     "time won"
     "kills deaths"
     "assists quote";
+  row-gap: 5px;
+  column-gap: 10px;
+  padding: 5px;
   background: var(--background-overlay);
+  height: 100%;
+}
+
+.printed-stat {
+  position: relative;
+  border: 3px solid rgb(66, 66, 66);
+  border-radius: 10px;
+  padding: 5px;
+  overflow: hidden;
+  height: 70%;
+}
+
+.stat-title {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  z-index: 1;
+  font-size: 290%;
+  color: rgba(87, 87, 87, 0.5);
+}
+
+.stat-stat {
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  z-index: 5;
+  font-size: 30px;
 }
 
 .medals {
   grid-area: medals;
   display: flex;
   justify-content: space-around;
-  width: 100%;
   background: var(--background-overlay);
+}
+
+.medal-title {
+  grid-area: title;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0;
+}
+
+.printed-medal {
+  position: relative;
+}
+
+.medal-number {
+  position: relative;
+  font-size: 200%;
+  text-align: center;
+  z-index: 10;
+  margin: auto;
+  text-shadow: 1px 1px 1px white;
+}
+
+.medal-img {
+  position: relative;
+  top: 72px;
+  left: 2px;
+  display: inline-block;
+  z-index: 1;
+  width: 100px;
+  margin: auto;
 }
 
 .back-link {
