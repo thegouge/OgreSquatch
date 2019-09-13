@@ -2,6 +2,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 import "./stats.css";
+import "./toggle.css";
+
 import {formatHeroName} from "../../lib/functions";
 
 const Stats = ({profile, heroData, mode, changePlayMode}) => {
@@ -65,7 +67,17 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
         <h3 className="username">{profile.name}</h3>
         {levelIcon}
       </div>
-      <button onClick={changePlayMode}>{mode}</button>
+      <input
+        onClick={changePlayMode}
+        class="tgl tgl-skewed"
+        id="cb3"
+        type="checkbox"
+      />
+      <label
+        class="tgl-btn"
+        data-tg-off="Quick"
+        data-tg-on="Competitive"
+        for="cb3"></label>
       <div
         id="chosen-hero"
         style={{
