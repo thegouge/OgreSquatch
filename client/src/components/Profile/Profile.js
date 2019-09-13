@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import {useFetch} from "../../lib/hooks";
 import {formatHeroName} from "../../lib/functions";
 
 import Stats from "../Stats";
@@ -10,12 +9,29 @@ import logo from "../../assets/images/logo.png";
 import "./Profile.css";
 
 const Profile = ({match}) => {
+  const api = `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`;
+
   // State
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("all-Heroes");
-  const [playerData, loading] = useFetch(
-    `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`
-  );
+  const [playerData, setPlayerData] = useState({
+    name: match.params.gamertag,
+  });
+
+  useEffect(() => {
+    async function fetchUrl(url) {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        setPlayerData(json);
+      } catch (error) {
+        console.error(error);
+        setPlayerData({...playerData, undefined: true});
+      }
+    }
+    fetchUrl(api);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [api]);
 
   // Methods
   const chooseHero = (name) => {
@@ -31,8 +47,12 @@ const Profile = ({match}) => {
   };
 
   // Boolean Flags
-  if (loading) {
+  if (!playerData.heroes) {
     return <Loading />;
+  } else if (playerData.undefined) {
+    return (
+      <h2>Something went wrong trying to fetch {playerData.name}'s data</h2>
+    );
   } else if (playerData.private) {
     return (
       <h2>
@@ -43,6 +63,7 @@ const Profile = ({match}) => {
   }
 
   // Rendering
+  // console.log(playerData);
   const heroTabs = Object.values(playerData.heroes).map((hero) => {
     return (
       <div

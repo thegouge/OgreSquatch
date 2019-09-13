@@ -69,15 +69,15 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
       </div>
       <input
         onClick={changePlayMode}
-        class="tgl tgl-skewed"
+        className="tgl tgl-skewed"
         id="cb3"
         type="checkbox"
       />
       <label
-        class="tgl-btn"
-        data-tg-off="Quick"
+        className="tgl-btn"
+        data-tg-off="Quickplay"
         data-tg-on="Competitive"
-        for="cb3"></label>
+        htmlFor="cb3"></label>
       <div
         id="chosen-hero"
         style={{
