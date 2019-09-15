@@ -1,3 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
+  --button-blue: rgb(70, 138, 194);
+  --button-yellow: rgb(221, 155, 42);
+  --highlight-yellow: rgb(251, 206, 82);
+  --logo-silver: rgb(212, 213, 215);
+  --menu-card: rgb(240, 240, 234);
+
   text-align: center;
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.overwatch-button-primary {
+  font-family: "buttons";
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid transparent;
+  background-color: #ffd200;
+  box-shadow: 0px 0px 3px #ffd200;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  opacity: 0.8;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 2px white;
+  transition: opacity 0.2s ease-out, border 0.2s ease-out;
+}
+.overwatch-button-primary:hover {
+  opacity: 1;
+  border: 3px solid white;
 }

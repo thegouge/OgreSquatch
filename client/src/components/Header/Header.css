@@ -1,9 +1,11 @@
 header {
-  font-family: "koverwatch";
+  font-family: "overwatch", "koverwatch";
   width: 100%;
   text-align: left;
-  padding-left: 50px;
+  font-weight: bold;
   box-sizing: border-box;
+  background: var(--button-blue);
+  padding: 10px 0 5px 60px;
 }
 
 header h1 {

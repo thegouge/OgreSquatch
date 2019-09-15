@@ -6,7 +6,7 @@ import "./Search.css";
 const Search = () => {
   // State
   const [platform, setPlatform] = useState("");
-  const [gamertag, setGamertag] = useState("TheGouge#1273");
+  const [gamertag, setGamertag] = useState("MirroR#11669");
   const [ready, setReady] = useState(false);
 
   let placeholderText = "";
@@ -86,7 +86,7 @@ const Search = () => {
           />
         </div>
 
-        <input id="submit" type="submit" />
+        <input id="submit" class="overwatch-button-primary" type="submit" />
       </form>
     </div>
   );

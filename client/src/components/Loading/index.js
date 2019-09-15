@@ -1,7 +1,3 @@
-import React from "react";
+import Loading from "./loading";
 
-function index() {
-  return <div>Loading...</div>;
-}
-
-export default index;
+export default Loading;

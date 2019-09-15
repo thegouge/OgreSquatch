@@ -1,24 +1,6 @@
 .tgl {
   display: none;
 }
-/* .tgl,
-.tgl:after,
-.tgl:before,
-.tgl *,
-.tgl *:after,
-.tgl *:before,
-.tgl + .tgl-btn {
-  box-sizing: border-box;
-} */
-/* .tgl::selection,
-.tgl:after::selection,
-.tgl:before::selection,
-.tgl *::selection,
-.tgl *:after::selection,
-.tgl *:before::selection,
-.tgl + .tgl-btn::selection {
-  background: none;
-} */
 .tgl + .tgl-btn {
   outline: 0;
   display: block;
@@ -59,10 +41,9 @@
   display: inline-block;
   transition: all 0.2s ease;
   width: 100%;
-  font-size: 40px;
+  font-size: 200%;
   text-align: center;
   position: absolute;
-  /* line-height: 2em; */
   font-weight: bold;
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);

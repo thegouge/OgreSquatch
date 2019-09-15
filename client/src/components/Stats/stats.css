@@ -51,8 +51,7 @@
 
 .logo {
   display: block;
-  width: 15%;
-  height: 85%;
+  width: 18%;
 }
 
 #chosen-hero {
@@ -158,6 +157,14 @@
 }
 
 .back-link {
+  font-family: "buttons";
   display: block;
-  margin-top: 10px;
+  margin: 10px auto;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid white;
+  background: var(--button-yellow);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
