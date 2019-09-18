@@ -86,11 +86,13 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
   let levelIcon;
   if (heroData.name === "all-Heroes") {
     levelIcon = (
-      <img
-        src={require(`../../assets/images/logo.png`)}
-        alt="selectedHero"
-        className="logo"
-      />
+      <div className="level-icon-comp">
+        <img
+          src={require(`../../assets/images/logo.png`)}
+          alt="selectedHero"
+          className="logo"
+        />
+      </div>
     );
   } else {
     levelIcon = (

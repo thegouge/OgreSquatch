@@ -16,8 +16,9 @@ function Loading() {
         <div className="hex"></div>
         <div className="hex"></div>
       </div>
+
       <Link className="loading-link" to="/">
-        Cancel
+        <div className="overwatch-button-primary loading-btn">Cancel</div>
       </Link>
     </div>
   );

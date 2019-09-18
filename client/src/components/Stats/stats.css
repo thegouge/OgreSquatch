@@ -8,8 +8,9 @@
   height: 25%;
   grid-area: profile;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: space-between;
+
+  align-items: center;
   padding: 10px;
 }
 
@@ -22,36 +23,41 @@
 
 .username {
   width: 66%;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
 }
 
 .level-icon-comp {
-  width: 25%;
-  height: 50%;
-}
-.level-icon {
   position: relative;
-  width: 70%;
+  width: 20%;
+  height: 100%;
+}
+
+.level-icon {
+  position: absolute;
+  width: 90%;
+  left: -18px;
+  top: -19px;
 }
 
 #prestige {
-  position: relative;
-  left: -25px;
-  top: -68px;
+  position: absolute;
+  left: -17.5px;
+  top: 47px;
 }
 
 .curr-hero-port {
-  width: 27.5%;
-  position: relative;
-  left: -87.5px;
-  top: -35px;
+  width: 34.4%;
+  position: absolute;
+  left: 25.5px;
+  top: -10px;
   clip-path: polygon(100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
 }
 
 .logo {
   display: block;
-  width: 18%;
+  width: 70%;
+  height: 100%;
 }
 
 #chosen-hero {

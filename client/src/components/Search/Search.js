@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Redirect} from "react-router-dom";
+import {useToasts} from "react-toast-notifications";
 
 import "./Search.css";
 
@@ -8,6 +9,7 @@ const Search = () => {
   const [platform, setPlatform] = useState("");
   const [gamertag, setGamertag] = useState("MirroR#11669");
   const [ready, setReady] = useState(false);
+  const {addToast} = useToasts();
 
   let placeholderText = "";
 
@@ -38,14 +40,42 @@ const Search = () => {
     setGamertag(event.target.value);
   };
 
+  const authenticateSearch = () => {
+    // Platform Booleans
+    if (platform === "") {
+      addToast("You need to Choose a Platform!", {
+        appearance: "error",
+        autoDismiss: true,
+      });
+      return false;
+    }
+    if (gamertag === "") {
+      addToast("You need to write a user name!", {
+        appearance: "error",
+        autoDismiss: true,
+      });
+      return false;
+    }
+    if (platform === "pc" && gamertag.search(/#(?=\d{4})/) < 0) {
+      addToast(
+        "A Battle.Net profile needs to have a battle tag (a hashtag followed by numbers)",
+        {appearance: "warning", autoDismiss: true}
+      );
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (platform === "pc") {
-      setGamertag(gamertag.replace(/#(?=\d{4})/, "-"));
+    if (authenticateSearch()) {
+      if (platform === "pc") {
+        setGamertag(gamertag.replace(/#(?=\d{4})/, "-"));
+      }
+      setReady(true);
     }
-
-    setReady(true);
   };
 
   if (ready) {
@@ -62,31 +92,32 @@ const Search = () => {
           if (e.key === "Enter") handleSubmit(e);
         }}
         onSubmit={handleSubmit}>
-        <div className="form-group">
-          <select
-            className="form-input"
-            id="platform"
-            type="select"
-            defaultValue=""
-            onChange={handlePlatformChange}>
-            <option value="">Choose a Platform</option>
-            <option value="pc">Battle.Net</option>
-            <option value="psn">PlayStation</option>
-            <option value="xbl">Xbox Live</option>
-          </select>
-        </div>
+        <div className="form-content">
+          <div className="form-group">
+            <select
+              className="form-input"
+              id="platform"
+              type="select"
+              defaultValue=""
+              onChange={handlePlatformChange}>
+              <option value="">Choose a Platform</option>
+              <option value="pc">Battle.Net</option>
+              <option value="psn">PlayStation</option>
+              <option value="xbl">Xbox Live</option>
+            </select>
+          </div>
 
-        <div className="form-group">
-          <input
-            className="form-input"
-            id="username"
-            onChange={handleTagChange}
-            value={gamertag}
-            placeholder={placeholderText}
-          />
+          <div className="form-group">
+            <input
+              className="form-input"
+              id="username"
+              onChange={handleTagChange}
+              value={gamertag}
+              placeholder={placeholderText}
+            />
+          </div>
         </div>
-
-        <input id="submit" class="overwatch-button-primary" type="submit" />
+        <input id="submit" className="overwatch-button-primary" type="submit" />
       </form>
     </div>
   );

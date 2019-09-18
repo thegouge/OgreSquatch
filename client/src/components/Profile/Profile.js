@@ -63,7 +63,6 @@ const Profile = ({match}) => {
   }
 
   // Rendering
-  // console.log(playerData);
   const heroTabs = Object.values(playerData.heroes).map((hero) => {
     return (
       <div
