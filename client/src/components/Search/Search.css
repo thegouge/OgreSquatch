@@ -19,35 +19,58 @@
 #profile-search form {
   margin: 0;
   margin-top: 10%;
-  display: grid;
-  grid-template-areas: "platform name" "submit submit";
   height: 100%;
 }
 
+.form-content {
+  display: flex;
+  justify-content: space-around;
+}
+
 .form-group {
+  width: 35%;
+  height: 100px;
   margin: auto;
   padding: 2px;
-  height: 50px;
 }
 
 .form-input {
   display: block;
   width: 100%;
   height: 50%;
-  padding: 1px 0;
+  line-height: 65px;
+  padding: 0 3px;
+  border: 3px solid transparent;
+  background-color: #469ed7;
+  box-shadow: 0px 0px 3px #469ed7;
+  border-radius: 5px;
+  font-family: "buttons", "bignoodletoo";
+  font-size: 26px;
+  color: white;
+  text-shadow: 0px 0px 1px white;
+  transition: opacity 0.2s ease-out, border 0.2s ease-out;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 3px solid white;
+}
+
+.form-input:hover {
+  border: 3px solid white;
 }
 
 #platform {
-  grid-area: platform;
+  height: 56%;
 }
 
-#name {
-  grid-area: name;
+option {
+  background: #7cb6dddc;
 }
 
 #submit {
-  grid-area: submit;
   font-size: 150%;
   width: 50%;
   height: 50px;
+  text-shadow: none;
 }

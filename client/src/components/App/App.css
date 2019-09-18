@@ -18,7 +18,7 @@
 }
 
 .overwatch-button-primary {
-  font-family: "buttons";
+  font-family: "buttons", "bignoodletoo";
   display: block;
   margin: 10px auto;
   width: fit-content;
@@ -30,10 +30,9 @@
   background-color: #ffd200;
   box-shadow: 0px 0px 3px #ffd200;
   border-radius: 5px;
-  -webkit-appearance: none;
   opacity: 0.8;
   text-transform: uppercase;
-  text-shadow: 0px 0px 2px white;
+  text-shadow: 0px 0px 1px white;
   transition: opacity 0.2s ease-out, border 0.2s ease-out;
 }
 .overwatch-button-primary:hover {
@@ -53,11 +52,11 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   opacity: 0.8;
-  font-family: Futura;
+  font-family: "buttons", "bignoodletoo";
   text-transform: uppercase;
   font-size: 26px;
   color: white;
-  text-shadow: 0px 0px 2px white;
+  text-shadow: 0px 0px 1px white;
   transition: opacity 0.2s ease-out, border 0.2s ease-out;
 }
 .overwatch-button-secondary:hover {

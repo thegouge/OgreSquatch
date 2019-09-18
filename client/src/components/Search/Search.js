@@ -3,6 +3,7 @@ import {Redirect} from "react-router-dom";
 import {useToasts} from "react-toast-notifications";
 
 import "./Search.css";
+import "../../fonts.css";
 
 const Search = () => {
   // State

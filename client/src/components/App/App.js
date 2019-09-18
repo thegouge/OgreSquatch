@@ -7,6 +7,7 @@ import Footer from "../Footer";
 import RouteView from "../../routes";
 
 import "./App.css";
+import "../../fonts.css";
 
 const App = () => (
   <ToastProvider>
