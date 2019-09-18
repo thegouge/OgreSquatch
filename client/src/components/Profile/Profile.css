@@ -16,7 +16,7 @@
   overflow-y: scroll;
   max-height: 500px;
   margin: 5px;
-  border: 3px solid orangered;
+  border: 3px solid var(--button-yellow);
   border-radius: 7px;
 }
 
@@ -41,14 +41,32 @@
   z-index: 1;
   display: flex;
   justify-content: left;
-  transition: 0.5s;
+  transition: 0.3s;
   padding: 5px 10px;
   border-top: 3px solid silver;
   background: white;
 }
 
+.hero-tab:hover {
+  border: 3px solid green;
+  border-radius: 5px;
+}
+
+.hero-tab:hover .image-wrapper {
+  transform: skew(25rad) translateX(5px) scale(1.1);
+}
+
+.hero-tab:hover .hero-text {
+  transform: scale(1.2);
+  margin-left: 40px;
+}
+
 #all-Heroes-tab {
   border-top: silver;
+}
+
+.selected {
+  background: var(--highlight-yellow);
 }
 
 .image-wrapper {
@@ -61,6 +79,7 @@
   border-radius: 7px;
   -webkit-transform: skew(25rad);
   transform: skew(25rad) translateX(5px);
+  transition: 0.3s;
 }
 
 .hero-portrait {
@@ -76,5 +95,6 @@
 
 .hero-text {
   font-size: 30px;
-  margin-left: 20px;
+  margin: 10px 0 0 20px;
+  transition: 0.3s;
 }

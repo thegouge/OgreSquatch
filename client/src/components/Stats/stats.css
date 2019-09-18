@@ -71,6 +71,7 @@
     "hero printout"
     "medals printout";
   grid-template-columns: 66% 34%;
+  transition: 0.3s;
 }
 
 .hero {
@@ -114,7 +115,7 @@
   left: 0;
   z-index: 1;
   font-size: 290%;
-  color: rgba(87, 87, 87, 0.7);
+  color: rgba(87, 87, 87, 0.6);
 }
 
 .stat-stat {
@@ -173,4 +174,8 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.no-stats {
+  height: 20%;
 }

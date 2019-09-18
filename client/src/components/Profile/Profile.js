@@ -66,7 +66,9 @@ const Profile = ({match}) => {
   const heroTabs = Object.values(playerData.heroes).map((hero) => {
     return (
       <div
-        className="hero-tab"
+        className={
+          hero.name === selectedHero ? "hero-tab selected" : "hero-tab"
+        }
         onClick={(e) => chooseHero(hero.name)}
         key={`${hero.name}-tab`}
         id={`${hero.name}-tab`}>
