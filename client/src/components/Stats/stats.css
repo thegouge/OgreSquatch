@@ -177,5 +177,8 @@
 }
 
 .no-stats {
-  height: 20%;
+  height: 66%;
+  font-size: 60px;
+  text-align: center;
+  margin: auto;
 }

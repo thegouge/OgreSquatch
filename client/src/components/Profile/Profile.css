@@ -58,7 +58,7 @@
 
 .hero-tab:hover .hero-text {
   transform: scale(1.2);
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 #all-Heroes-tab {
@@ -97,4 +97,15 @@
   font-size: 30px;
   margin: 10px 0 0 20px;
   transition: 0.3s;
+}
+
+.error-message {
+  height: 500px;
+  font-family: "koverwatch", "bignoodletoo";
+}
+
+.error-message h2 {
+  margin: 70px auto 0 auto;
+  font-size: 60px;
+  font-weight: normal;
 }

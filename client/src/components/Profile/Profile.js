@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
-import {formatHeroName} from "../../lib/functions";
+import {Link} from "react-router-dom";
 
 import Stats from "../Stats";
 import Loading from "../Loading";
 
+import {formatHeroName} from "../../lib/functions";
 import logo from "../../assets/images/logo.png";
-
 import "./Profile.css";
 
 const Profile = ({match}) => {
@@ -14,19 +14,22 @@ const Profile = ({match}) => {
   // State
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("all-Heroes");
-  const [playerData, setPlayerData] = useState({
-    name: match.params.gamertag,
-  });
+  const [playerData, setPlayerData] = useState({name: match.params.gamertag});
 
   useEffect(() => {
     async function fetchUrl(url) {
       try {
         const response = await fetch(url);
         const json = await response.json();
-        setPlayerData(json);
+        if (json.error) {
+          setPlayerData({...playerData, ...json});
+        } else {
+          setPlayerData(json);
+        }
       } catch (error) {
+        console.log("error!");
         console.error(error);
-        setPlayerData({...playerData, undefined: true});
+        setPlayerData({name: match.params.gamertag, undefined: true});
       }
     }
     fetchUrl(api);
@@ -47,18 +50,38 @@ const Profile = ({match}) => {
   };
 
   // Boolean Flags
-  if (!playerData.heroes) {
-    return <Loading />;
-  } else if (playerData.undefined) {
+  if (playerData.error) {
+    console.error(`${playerData.error}: ${playerData.message}`);
     return (
-      <h2>Something went wrong trying to fetch {playerData.name}'s data</h2>
+      <div className="error-message">
+        <h2>Something went wrong trying to fetch {playerData.name}'s data</h2>
+        <Link to="/" className="overwatch-button-primary">
+          Go Back
+        </Link>
+      </div>
     );
   } else if (playerData.private) {
     return (
-      <h2>
-        The account {playerData.name} is private. They will have to set their
-        account in Overwatch to public in order to display their stats
-      </h2>
+      <div className="error-message">
+        <h2>
+          The account {playerData.name} is private. They will have to set their
+          account in Overwatch to public in order to display their stats
+        </h2>
+        <Link to="/" className="overwatch-button-primary">
+          Go Back
+        </Link>
+      </div>
+    );
+  } else if (!playerData.heroes) {
+    return <Loading />;
+  } else if (playerData.private) {
+    return (
+      <div className="error-message">
+        <h2>
+          The account {playerData.name} is private. They will have to set their
+          account in Overwatch to public in order to display their stats
+        </h2>
+      </div>
     );
   }
 
