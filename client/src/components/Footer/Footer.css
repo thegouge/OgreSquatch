@@ -5,13 +5,13 @@ footer {
   align-items: center;
   background: black;
   color: white;
+  padding: 10px;
 }
 
 .credit {
   width: 20%;
   height: 100%;
   text-align: center;
-  padding: 20px;
 }
 
 .alex-link:hover .alex {
@@ -21,7 +21,7 @@ footer {
 .alex {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 30%;
   border-radius: 50%;
 }
 
