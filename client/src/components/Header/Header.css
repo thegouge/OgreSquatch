@@ -3,8 +3,8 @@ header {
   width: 100%;
   text-align: left;
   font-weight: bold;
-  box-sizing: border-box;
-  background: var(--button-blue);
+
+  background: var(--highlight-yellow);
   padding: 10px 0 5px 60px;
 }
 

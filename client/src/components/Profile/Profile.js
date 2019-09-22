@@ -113,7 +113,7 @@ const Profile = ({match}) => {
   });
 
   return (
-    <div id="profile-window" data-test="profileComp">
+    <section id="profile-window" data-test="profileComp">
       <div id="hero-list">
         <div id="hero-tab-list">{heroTabs}</div>
       </div>
@@ -124,7 +124,7 @@ const Profile = ({match}) => {
         mode={playMode}
         changePlayMode={changePlayMode}
       />
-    </div>
+    </section>
   );
 };
 

@@ -63,7 +63,6 @@
 #chosen-hero {
   --background-overlay: rgba(266, 266, 266, 0.6);
 
-  box-sizing: border-box;
   height: 66%;
   background-color: rgb(226, 226, 226);
   display: grid;
@@ -86,7 +85,6 @@
 }
 
 .printout {
-  box-sizing: border-box;
   grid-area: printout;
   display: grid;
   grid-template-areas:

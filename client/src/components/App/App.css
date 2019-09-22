@@ -1,6 +1,32 @@
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 73.9%;
+  min-height: 510px;
+  align-items: center;
+
+  text-align: center;
+  background-image: url("../../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  height: 10%;
 }
 
 .App {
@@ -9,20 +35,13 @@
   --highlight-yellow: rgb(251, 206, 82);
   --logo-silver: rgb(212, 213, 215);
   --menu-card: rgb(240, 240, 234);
-
-  text-align: center;
-  background-image: url("../../assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
 }
 
 .overwatch-button-primary {
   font-family: "buttons", "bignoodletoo";
   display: block;
-  margin: 10px auto;
+  margin: auto;
   width: fit-content;
-  padding: 10px;
   color: white;
   text-decoration: none;
   font-weight: bold;

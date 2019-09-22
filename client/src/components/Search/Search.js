@@ -84,7 +84,7 @@ const Search = () => {
   }
 
   return (
-    <div id="profile-search" data-test="searchComp">
+    <section id="profile-search" data-test="searchComp">
       <h2 className="search-header">
         Find out if your friends need to stay on the payload!
       </h2>
@@ -120,7 +120,7 @@ const Search = () => {
         </div>
         <input id="submit" className="overwatch-button-primary" type="submit" />
       </form>
-    </div>
+    </section>
   );
 };
 

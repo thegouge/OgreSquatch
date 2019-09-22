@@ -1,4 +1,37 @@
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
   background: black;
   color: white;
+}
+
+.credit {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.alex-link:hover .alex {
+  border: 3px solid var(--highlight-yellow);
+}
+
+.alex {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.credit-link {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.credit-link:hover {
+  text-decoration: solid underline;
 }

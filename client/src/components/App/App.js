@@ -9,14 +9,18 @@ import RouteView from "../../routes";
 import "./App.css";
 import "../../fonts.css";
 
-const App = () => (
-  <ToastProvider>
-    <div className="App" data-test="AppComp">
-      <Header />
-      <RouteView />
-      <Footer />
-    </div>
-  </ToastProvider>
-);
+const App = () => {
+  return (
+    <ToastProvider>
+      <div className="App" data-test="AppComp">
+        <Header />
+        <main>
+          <RouteView />
+        </main>
+        <Footer />
+      </div>
+    </ToastProvider>
+  );
+};
 
 export default App;
