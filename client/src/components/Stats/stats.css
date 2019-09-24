@@ -37,26 +37,27 @@
   position: absolute;
   width: 90%;
   left: -18px;
-  top: -19px;
+  top: -30px;
 }
 
 #prestige {
+  width: 70%;
   position: absolute;
-  left: -17.5px;
-  top: 47px;
+  left: -1.5px;
+  top: 50px;
 }
 
 .curr-hero-port {
   width: 34.4%;
   position: absolute;
   left: 25.5px;
-  top: -10px;
+  top: -21px;
   clip-path: polygon(100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
 }
 
 .logo {
   display: block;
-  width: 70%;
+  width: 102px;
   height: 100%;
 }
 
@@ -65,12 +66,14 @@
 
   height: 66%;
   background-color: rgb(226, 226, 226);
+  border: 2px solid var(--logo-silver);
   display: grid;
   grid-template-areas:
     "hero printout"
     "medals printout";
   grid-template-columns: 66% 34%;
   transition: 0.3s;
+  margin-bottom: 5px;
 }
 
 .hero {

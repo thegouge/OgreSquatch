@@ -17,6 +17,7 @@ body,
 main {
   min-height: 565px;
   align-items: center;
+  padding: 0;
 
   text-align: center;
   background-image: url("../../assets/images/background.jpg");

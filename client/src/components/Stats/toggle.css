@@ -5,11 +5,12 @@
   outline: 0;
   display: block;
   width: 80%;
-  height: 3em;
+  height: 50px;
   position: relative;
   cursor: pointer;
   user-select: none;
   margin: 5px auto;
+  padding: 0.5%;
 }
 .tgl + .tgl-btn:after,
 .tgl + .tgl-btn:before {
