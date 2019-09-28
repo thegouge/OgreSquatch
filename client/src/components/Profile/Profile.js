@@ -22,14 +22,15 @@ const Profile = ({match}) => {
         const response = await fetch(url);
         const json = await response.json();
         if (json.error) {
-          setPlayerData({...playerData, ...json});
+          // setPlayerData({...playerData, ...json});
         } else {
-          setPlayerData(json);
+          setPlayerData();
+          // setPlayerData(json);
         }
       } catch (error) {
         console.log("error!");
         console.error(error);
-        setPlayerData({name: match.params.gamertag, undefined: true});
+        // setPlayerData({name: match.params.gamertag, undefined: true});
       }
     }
     fetchUrl(api);
@@ -54,8 +55,10 @@ const Profile = ({match}) => {
     console.error(`${playerData.error}: ${playerData.message}`);
     return (
       <div className="error-message">
-        <h2>Something went wrong trying to fetch {playerData.name}'s data</h2>
-        <Link to="/" className="overwatch-button-primary">
+        <h2>
+          Something went wrong trying to fetch <br /> {playerData.name}'s data
+        </h2>
+        <Link to="/" className="overwatch-button-primary error-link">
           Go Back
         </Link>
       </div>
@@ -67,7 +70,7 @@ const Profile = ({match}) => {
           The account {playerData.name} is private. They will have to set their
           account in Overwatch to public in order to display their stats
         </h2>
-        <Link to="/" className="overwatch-button-primary">
+        <Link to="/" className="overwatch-button-primary error-link">
           Go Back
         </Link>
       </div>

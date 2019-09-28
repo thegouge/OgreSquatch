@@ -110,10 +110,15 @@
 .error-message {
   height: 500px;
   font-family: "koverwatch", "bignoodletoo";
+  padding-top: 70px;
 }
 
 .error-message h2 {
-  margin: 70px auto 0 auto;
-  font-size: 60px;
+  font-size: 6vw;
   font-weight: normal;
+}
+
+.error-link {
+  padding: 5px;
+  margin-top: 50px !important;
 }
