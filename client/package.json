@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "mv build ../server",
+    "postbuild": "mv build ..",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
