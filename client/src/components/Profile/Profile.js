@@ -22,15 +22,14 @@ const Profile = ({match}) => {
         const response = await fetch(url);
         const json = await response.json();
         if (json.error) {
-          // setPlayerData({...playerData, ...json});
+          setPlayerData({...playerData, ...json});
         } else {
-          setPlayerData();
-          // setPlayerData(json);
+          setPlayerData(json);
         }
       } catch (error) {
         console.log("error!");
         console.error(error);
-        // setPlayerData({name: match.params.gamertag, undefined: true});
+        setPlayerData({...playerData, error});
       }
     }
     fetchUrl(api);
