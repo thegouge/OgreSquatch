@@ -2,19 +2,17 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 
 import Stats from "../Stats";
+import HeroTabs from "../HeroTabs"
 import Loading from "../Loading";
 
-import {formatHeroName} from "../../lib/functions";
-import logo from "../../assets/images/logo.png";
 import "./Profile.css";
 
 const Profile = ({match}) => {
-  const api = `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`;
-
   // State
   const [playMode, setPlaymode] = useState("quick");
   const [selectedHero, setSelectedHero] = useState("all-Heroes");
   const [playerData, setPlayerData] = useState({name: match.params.gamertag});
+  const api = `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`;
 
   useEffect(() => {
     async function fetchUrl(url) {
@@ -49,7 +47,7 @@ const Profile = ({match}) => {
     }
   };
 
-  // Boolean Flags
+  // Error "Handling"
   if (playerData.error) {
     console.error(`${playerData.error}: ${playerData.message}`);
     return (
@@ -88,37 +86,9 @@ const Profile = ({match}) => {
   }
 
   // Rendering
-  const heroTabs = Object.values(playerData.heroes).map((hero) => {
-    return (
-      <div
-        className={
-          hero.name === selectedHero ? "hero-tab selected" : "hero-tab"
-        }
-        onClick={(e) => chooseHero(hero.name)}
-        key={`${hero.name}-tab`}
-        id={`${hero.name}-tab`}>
-        <span className="image-wrapper">
-          <img
-            className="hero-portrait"
-            id={`${hero.name}-portrait`}
-            src={
-              hero.name === "all-Heroes"
-                ? logo
-                : `https://d1u1mce87gyfbn.cloudfront.net/hero/${hero.name}/icon-portrait.png`
-            }
-            alt={`${hero.name} tab portrait`}
-          />
-        </span>
-        <p className="hero-text">{formatHeroName(hero.name)}</p>
-      </div>
-    );
-  });
-
   return (
     <section id="profile-window" data-test="profileComp">
-      <div id="hero-list">
-        <div id="hero-tab-list">{heroTabs}</div>
-      </div>
+      <HeroTabs chooseHero={chooseHero} heroes={playerData.heroes} selectedHero={selectedHero} />
 
       <Stats
         profile={playerData.profile}

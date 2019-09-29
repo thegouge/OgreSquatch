@@ -3,6 +3,7 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
+  
   return (
     <footer data-test="footerComp">
       <div className="credit">
@@ -22,6 +23,14 @@ const Footer = () => {
           Blizzard
         </a>{" "}
         (please don't sue me)
+      </div>
+      <div className="credit">
+        This app uses
+        <a
+          className="credit-link"
+          href="https://ovrstat.com/">
+          Ovrstat
+        </a> for fetching Overwatch stats
       </div>
       <div className="credit">
         toggle switch designed by{" "}
