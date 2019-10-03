@@ -5,6 +5,8 @@ import Stats from "../Stats";
 import HeroTabs from "../HeroTabs"
 import Loading from "../Loading";
 
+import testData from "../../lib/response.json";
+
 import "./Profile.css";
 
 const Profile = ({match}) => {
@@ -15,22 +17,23 @@ const Profile = ({match}) => {
   const api = `/api/v1/profile/${match.params.platform}/${match.params.gamertag}`;
 
   useEffect(() => {
-    async function fetchUrl(url) {
-      try {
-        const response = await fetch(url);
-        const json = await response.json();
-        if (json.error) {
-          setPlayerData({...playerData, ...json});
-        } else {
-          setPlayerData(json);
-        }
-      } catch (error) {
-        console.log("error!");
-        console.error(error);
-        setPlayerData({...playerData, error});
-      }
-    }
-    fetchUrl(api);
+    // async function fetchUrl(url) {
+    //   try {
+    //     const response = await fetch(url);
+    //     const json = await response.json();
+    //     if (json.error) {
+    //       setPlayerData({...playerData, ...json});
+    //     } else {
+    //       setPlayerData(json);
+    //     }
+    //   } catch (error) {
+    //     console.log("error!");
+    //     console.error(error);
+    //     setPlayerData({...playerData, error});
+    //   }
+    // }
+    // fetchUrl(api);
+    setPlayerData(testData);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [api]);
 

@@ -183,3 +183,10 @@
   text-align: center;
   margin: auto;
 }
+
+@media screen and (max-width: 935px) {
+  #profile-info {
+    width: 80%;
+    margin: auto;
+  }
+}

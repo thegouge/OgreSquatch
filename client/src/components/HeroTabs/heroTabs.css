@@ -4,6 +4,9 @@
 }
 
 #hero-tab-list {
+  list-style: none;
+  padding: 0;
+  display: block;
   overflow-y: scroll;
   max-height: 500px;
   margin: 5px;
@@ -94,6 +97,57 @@
   transition: 0.3s;
 }
 
-.dropDown {
-  width: 2%;
+
+@media screen and (max-width: 935px) {
+  .dropDown {
+    display: block;
+    width: 100%;
+    margin-left: 10%;
+    border: 1px solid var(--logo-silver);
+    background: white;
+    padding: 10px 5px;
+    border: 3px solid var(--button-yellow);
+  }
+
+  #hero-tab-list {
+    position: absolute;
+    left: -5px;
+    top: 85%;
+    z-index: 100;
+    border-radius: 0;
+    border-radius: 0;
+    border-top: none;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s;
+  }
+
+  #hero-tab-list::-webkit-scrollbar {
+    border-radius: 0;
+  }
+  #hero-tab-list::-webkit-scrollbar-thumb {
+    border-radius: 0;
+  }
+  #hero-tab-list::-webkit-scrollbar-track {
+    border-radius: 0;
+  }
+
+  .hero-tab {
+    height: fit-content;
+  }
+
+  .image-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+  .hero-portrait {
+    width: 120%;
+  }
+
+  #all-Heroes-portrait {
+    position: relative;
+    left: 5px;
+    top: 2px;
+    width: 95%;
+  }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import {formatHeroName} from "../../lib/functions";
 import logo from "../../assets/images/logo.png";
@@ -6,9 +6,18 @@ import logo from "../../assets/images/logo.png";
 import "./heroTabs.css";
 
 const HeroTabs = ({heroes, chooseHero, selectedHero}) => {
+  // State
+  const [dropDownDisplay, setDisplay] = useState(true);
+
+  // Methods
+  const displayHeroList = () => {
+    setDisplay(!dropDownDisplay);
+  }
+
+  // Render
   const heroTabs = Object.values(heroes).map((hero) => {
     return (
-      <div
+      <li
         className={
           hero.name === selectedHero ? "hero-tab selected" : "hero-tab"
         }
@@ -28,24 +37,23 @@ const HeroTabs = ({heroes, chooseHero, selectedHero}) => {
           />
         </span>
         <p className="hero-text">{formatHeroName(hero.name)}</p>
-      </div>
+      </li>
     );
   });
 
   if(window.matchMedia("(max-width: 935px)").matches) {
-    console.log(true);
     return (
-      <div className="dropDown">
-        <div id="hero-tab-list">
+      <div className="dropDown" id="hero-list" onClick={displayHeroList}>
+        Hero Chooser <span></span>
+        <ul id="hero-tab-list" style={dropDownDisplay ? {height: 300} : {height: 0}}>
           {heroTabs}
-        </div>
+        </ul>
       </div>
     )
   } else {
-    console.log(false);
     return (
       <div id="hero-list">
-          <div id="hero-tab-list">{heroTabs}</div>
+          <ul id="hero-tab-list">{heroTabs}</ul>
       </div>
     )
   }

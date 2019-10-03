@@ -26,3 +26,9 @@
   padding: 5px;
   margin-top: 50px !important;
 }
+
+@media screen and (max-width: 935px) {
+  #profile-window {
+    flex-direction: column;
+  }
+}
