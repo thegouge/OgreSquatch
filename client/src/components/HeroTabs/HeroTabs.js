@@ -7,7 +7,7 @@ import "./heroTabs.css";
 
 const HeroTabs = ({heroes, chooseHero, selectedHero}) => {
   // State
-  const [dropDownDisplay, setDisplay] = useState(true);
+  const [dropDownDisplay, setDisplay] = useState(false);
 
   // Methods
   const displayHeroList = () => {

@@ -29,37 +29,36 @@
 
 .level-icon-comp {
   position: relative;
-  width: 20%;
-  height: 100%;
+  width: 130px;
+  height: 130px;
 }
 
 .level-icon {
   position: absolute;
-  width: 90%;
-  left: -18px;
-  top: -30px;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 #prestige {
-  width: 70%;
+  width: 80%;
   position: absolute;
-  left: -1.5px;
-  top: 50px;
+  top: 50%;
+  left: 10%;
 }
 
 .curr-hero-port {
-  width: 34.4%;
+  width: 39%;
   position: absolute;
-  left: 25.5px;
-  top: -21px;
+  left: 30.8%;
+  top: 4.6%;
   clip-path: polygon(100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
 }
 
 .logo {
   display: block;
-  width: 102px;
-  height: 100%;
-}
+  width: 100px;
+  height: 100px;}
 
 #chosen-hero {
   --background-overlay: rgba(266, 266, 266, 0.6);
@@ -188,5 +187,29 @@
   #profile-info {
     width: 80%;
     margin: auto;
+  }
+
+  .level-icon-comp {
+  }
+
+  #chosen-hero {
+    height: 200px;
+  }
+
+  .printed-stat {
+    height: 90%;
+  }
+
+  .stat-title {
+    font-size: 190%;
+    bottom: 30%;
+  }
+
+  .medal-img {
+    top: 30px;
+  }
+
+  .medal-number {
+    top: -40px;
   }
 }

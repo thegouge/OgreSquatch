@@ -151,3 +151,19 @@
     width: 95%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .hero-tab {
+    padding-left: 5px;
+  }
+
+  .image-wrapper {
+    display: none;
+  }
+  
+  .hero-text {
+    margin: 0;
+    padding-left: 0;
+    font-size: 130%;
+  }
+}
