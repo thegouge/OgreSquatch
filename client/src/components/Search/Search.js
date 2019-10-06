@@ -8,7 +8,7 @@ import "../../fonts.css";
 const Search = () => {
   // State
   const [platform, setPlatform] = useState("");
-  const [gamertag, setGamertag] = useState("MirroR#11669");
+  const [gamertag, setGamertag] = useState("");
   const [ready, setReady] = useState(false);
   const {addToast} = useToasts();
 
