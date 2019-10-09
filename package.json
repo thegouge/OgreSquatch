@@ -1,12 +1,14 @@
 {
   "name": "ogre-squatch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "overwatch stat tracker based on the traversy media tutorial",
   "main": "server.js",
   "scripts": {
     "server": "nodemon server",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "predeploy": "npm run build --prefix client",
+    "deploy": "git push heroku master"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
