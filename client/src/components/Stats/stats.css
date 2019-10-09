@@ -1,64 +1,8 @@
-#profile-info {
-  width: 65%;
+#hero-info {
+  grid-area: hero-info;
   display: flex;
   flex-direction: column;
 }
-
-#profile-slug {
-  height: 25%;
-  grid-area: profile;
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center;
-  padding: 10px;
-}
-
-#player-icon {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border: 3px solid white;
-}
-
-.username {
-  width: 66%;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.level-icon-comp {
-  position: relative;
-  width: 130px;
-  height: 130px;
-}
-
-.level-icon {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-#prestige {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
-
-.curr-hero-port {
-  width: 39%;
-  position: absolute;
-  left: 30.8%;
-  top: 4.6%;
-  clip-path: polygon(100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
-}
-
-.logo {
-  display: block;
-  width: 100px;
-  height: 100px;}
 
 #chosen-hero {
   --background-overlay: rgba(266, 266, 266, 0.6);
@@ -93,8 +37,6 @@
     "time won"
     "kills deaths"
     "assists quote";
-  row-gap: 5px;
-  column-gap: 10px;
   padding: 5px;
   background: var(--background-overlay);
   height: 100%;
@@ -106,7 +48,8 @@
   border-radius: 10px;
   padding: 5px;
   overflow: hidden;
-  height: 70%;
+  width: 90%;
+  height: 90%;
 }
 
 .stat-title {
@@ -123,7 +66,7 @@
   bottom: 0;
   right: 6px;
   z-index: 5;
-  font-size: 30px;
+  font-size: 190%;
 }
 
 .medals {
@@ -146,6 +89,7 @@
 
 .medal-number {
   position: relative;
+  bottom: 15%;
   font-size: 200%;
   text-align: center;
   z-index: 10;
@@ -154,10 +98,11 @@
 }
 
 .medal-img {
+  align-self: center;
   position: relative;
-  top: 72px;
-  left: 2px;
-  display: inline-block;
+  top: 45px;
+  left: 3px;
+  display: block;
   z-index: 1;
   width: 100px;
   margin: auto;
@@ -184,16 +129,9 @@
 }
 
 @media screen and (max-width: 935px) {
-  #profile-info {
+  #hero-info {
     width: 80%;
     margin: auto;
-  }
-
-  .level-icon-comp {
-  }
-
-  #chosen-hero {
-    height: 200px;
   }
 
   .printed-stat {
@@ -205,11 +143,38 @@
     bottom: 30%;
   }
 
+  .stat-stat {
+    font-size: 150%;
+  }
+
   .medal-img {
     top: 30px;
+    width: 80%;
   }
 
   .medal-number {
-    top: -40px;
+    bottom: 25%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #chosen-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .printout {
+    height: 200px;
+  }
+
+  .medal-img {
+    top: 0;
+  }
+
+  .medal-number {
+    bottom: 50%;
+    font-size: 150%;
   }
 }

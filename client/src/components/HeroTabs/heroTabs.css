@@ -1,6 +1,6 @@
 #hero-list {
+  grid-area: hero-tabs;
   position: relative;
-  width: 30%;
 }
 
 #hero-tab-list {
@@ -8,7 +8,7 @@
   padding: 0;
   display: block;
   overflow-y: scroll;
-  max-height: 500px;
+  height: 500px;
   margin: 5px;
   border: 3px solid var(--button-yellow);
   border-radius: 7px;
@@ -97,22 +97,26 @@
   transition: 0.3s;
 }
 
-
 @media screen and (max-width: 935px) {
+  #hero-list {
+    width: 77%;
+    margin: auto;
+  }
+
   .dropDown {
     display: block;
     width: 100%;
-    margin-left: 10%;
     border: 1px solid var(--logo-silver);
     background: white;
-    padding: 10px 5px;
+    padding: 10px 0;
     border: 3px solid var(--button-yellow);
+    font-size: 150%;
   }
 
   #hero-tab-list {
     position: absolute;
     left: -5px;
-    top: 85%;
+    top: 89%;
     z-index: 100;
     border-radius: 0;
     border-radius: 0;
@@ -160,7 +164,7 @@
   .image-wrapper {
     display: none;
   }
-  
+
   .hero-text {
     margin: 0;
     padding-left: 0;

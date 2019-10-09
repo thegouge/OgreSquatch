@@ -1,14 +1,76 @@
 #profile-window {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 25% 75%;
+  grid-template-areas:
+    "hero-tabs profile"
+    "hero-tabs hero-info";
+
   position: relative;
   top: 20px;
   font-family: "bignoodletoo";
-  display: flex;
-  justify-content: space-around;
   width: 90%;
+  height: 100%;
   margin: auto;
   padding: 10px 5px;
   background: var(--menu-card);
   border: 2px solid silver;
+}
+
+#profile-slug {
+  grid-area: profile;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 10px;
+}
+
+#player-icon {
+  display: block;
+  width: 14%;
+  border: 3px solid white;
+}
+
+.username {
+  width: 66%;
+  font-size: 400%;
+  font-weight: bold;
+}
+
+.level-icon-comp {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.level-icon {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#prestige {
+  width: 80%;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
+.curr-hero-port {
+  width: 39%;
+  position: absolute;
+  left: 30.8%;
+  top: 4.6%;
+  clip-path: polygon(100% 0, 100% 83%, 50% 100%, 0 83%, 0 0);
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 80%;
+  top: 10px;
 }
 
 .error-message {
@@ -29,6 +91,37 @@
 
 @media screen and (max-width: 935px) {
   #profile-window {
+    display: flex;
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #prestige {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #profile-slug {
+    height: 100px;
+  }
+
+  #player-icon {
+    width: 20%;
+  }
+
+  .username {
+    font-size: 300%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #profile-slug {
+    justify-content: space-around;
+  }
+
+  .level-icon-comp {
+    display: none;
   }
 }

@@ -27,9 +27,29 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
           backgroundRepeat: "no-repeat",
         }}>
         <article className="hero">
-          <h4 className="hero-name">
-            {formatHeroName(heroData.name)} ({mode})
-          </h4>
+          <h4 className="hero-name">{formatHeroName(heroData.name)}</h4>
+        </article>
+        <article className="printout">
+          <div className="printed-stat">
+            <span className="stat-title">Time</span>
+            <span className="stat-stat">{data.timePlayed}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Kills</span>
+            <span className="stat-stat">{data.eliminations}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Deaths</span>
+            <span className="stat-stat">{data.deaths}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Assists</span>
+            <span className="stat-stat">{data.assists}</span>
+          </div>
+          <div className="printed-stat">
+            <span className="stat-title">Wins</span>
+            <span className="stat-stat">{data.gamesWon}</span>
+          </div>
         </article>
         <article className="medals">
           <div className="printed-medal">
@@ -57,82 +77,12 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
             <p className="medal-number">{data.medals.gold}</p>
           </div>
         </article>
-        <article className="printout">
-          <div className="printed-stat">
-            <span className="stat-title">Time</span>
-            <span className="stat-stat">{data.timePlayed}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Kills</span>
-            <span className="stat-stat">{data.eliminations}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Deaths</span>
-            <span className="stat-stat">{data.deaths}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Assists</span>
-            <span className="stat-stat">{data.assists}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Wins</span>
-            <span className="stat-stat">{data.gamesWon}</span>
-          </div>
-        </article>
-      </div>
-    );
-  }
-
-  let levelIcon;
-  if (heroData.name === "all-Heroes") {
-    levelIcon = (
-      <div className="level-icon-comp">
-        <img
-          src={require(`../../assets/images/logo.png`)}
-          alt="selectedHero"
-          className="logo"
-        />
-      </div>
-    );
-  } else {
-    levelIcon = (
-      <div className="level-icon-comp">
-        {profile.icons.levelIcon && (
-          <img
-            className="level-icon"
-            id="level"
-            src={profile.icons.levelIcon}
-            alt="level Icon"
-          />
-        )}
-        <img
-          src={require(`../../assets/images/heroes/${heroData.name}.png`)}
-          alt="Selected Hero"
-          className="curr-hero-port"
-        />
-        {profile.icons.prestigeIcon && (
-          <img
-            className="level-icon"
-            id="prestige"
-            src={profile.icons.prestigeIcon}
-            alt="prestige Icon"
-          />
-        )}
       </div>
     );
   }
 
   return (
-    <div id="profile-info" data-test="statsComp">
-      <div id="profile-slug">
-        <img
-          id="player-icon"
-          src={profile.icons.profileIcon}
-          alt="account icon"
-        />
-        <h3 className="username">{profile.name}</h3>
-        {levelIcon}
-      </div>
+    <div id="hero-info" data-test="statsComp">
       <input
         onClick={changePlayMode}
         className="tgl tgl-skewed"
@@ -144,6 +94,7 @@ const Stats = ({profile, heroData, mode, changePlayMode}) => {
         data-tg-off="Quickplay"
         data-tg-on="Competitive"
         htmlFor="cb3"></label>
+
       {chosenHeroStats}
 
       <Link to="/" className="overwatch-button-primary back-link">
