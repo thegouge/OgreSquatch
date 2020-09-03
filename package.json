@@ -13,10 +13,10 @@
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.2",
-    "dotenv": "^8.0.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^2.0.4"
   }
 }
