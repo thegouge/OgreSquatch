@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5fbad71.chunk.css",
-    "main.js": "/static/js/main.947428f9.chunk.js",
-    "main.js.map": "/static/js/main.947428f9.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.9a6d86c4.chunk.js": "/static/js/2.9a6d86c4.chunk.js",
-    "static/js/2.9a6d86c4.chunk.js.map": "/static/js/2.9a6d86c4.chunk.js.map",
+    "main.css": "/static/css/main.7e0f4e2b.chunk.css",
+    "main.js": "/static/js/main.323b74f5.chunk.js",
+    "main.js.map": "/static/js/main.323b74f5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/js/2.32b97fb6.chunk.js": "/static/js/2.32b97fb6.chunk.js",
+    "static/js/2.32b97fb6.chunk.js.map": "/static/js/2.32b97fb6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bf33061e68c4fccdd41476ae570784ec.js": "/precache-manifest.bf33061e68c4fccdd41476ae570784ec.js",
+    "precache-manifest.42da4c289e4a3c1fa2a21fc42d1ff323.js": "/precache-manifest.42da4c289e4a3c1fa2a21fc42d1ff323.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b5fbad71.chunk.css.map": "/static/css/main.b5fbad71.chunk.css.map",
+    "static/css/main.7e0f4e2b.chunk.css.map": "/static/css/main.7e0f4e2b.chunk.css.map",
+    "static/js/2.32b97fb6.chunk.js.LICENSE.txt": "/static/js/2.32b97fb6.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/static/media/koverwatch.b4ba45a9.ttf",
+    "static/media/Sigma.png": "/static/media/Sigma.5cdd84ae.png",
     "static/media/ana.png": "/static/media/ana.e4dd9301.png",
     "static/media/ashe.png": "/static/media/ashe.5bae2d9b.png",
     "static/media/baptiste.png": "/static/media/baptiste.aaefa22f.png",
@@ -36,7 +38,6 @@
     "static/media/reaper.png": "/static/media/reaper.f0456a5d.png",
     "static/media/reinhardt.png": "/static/media/reinhardt.bd4c7033.png",
     "static/media/roadhog.png": "/static/media/roadhog.91d8f1f6.png",
-    "static/media/sigma.png": "/static/media/sigma.5cdd84ae.png",
     "static/media/silver.png": "/static/media/silver.2feba79c.png",
     "static/media/soldier-76.png": "/static/media/soldier-76.08190061.png",
     "static/media/sombra.png": "/static/media/sombra.36d106f4.png",
@@ -48,5 +49,11 @@
     "static/media/wrecking-ball.png": "/static/media/wrecking-ball.e792afc2.png",
     "static/media/zarya.png": "/static/media/zarya.48176522.png",
     "static/media/zenyatta.png": "/static/media/zenyatta.49122cb2.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/js/2.32b97fb6.chunk.js",
+    "static/css/main.7e0f4e2b.chunk.css",
+    "static/js/main.323b74f5.chunk.js"
+  ]
 }
