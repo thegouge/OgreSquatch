@@ -1,21 +1,21 @@
-import React from "react";
-import {shallow} from "enzyme";
+import React from 'react';
+import { shallow } from 'enzyme';
 
-import App from "./index";
-import {findElementByDataTest} from "../../lib/testFunctions";
+import App from './index';
+import { findElementByDataTest } from '../../lib/testFunctions';
 
-describe("App Component", () => {
-  let component;
+describe('App Component', () => {
+	let component;
 
-  beforeEach(() => {
-    component = shallow(<App />);
-  });
+	beforeEach(() => {
+		component = shallow(<App />);
+	});
 
-  it("Should render without crashing", () => {
-    const wrapper = findElementByDataTest(component, "AppComp");
+	it('Should render without crashing', () => {
+		const wrapper = findElementByDataTest(component, 'AppComp');
 
-    console.log(wrapper);
+		console.log(wrapper);
 
-    expect(wrapper.length).toBe(1);
-  });
+		expect(wrapper.length).toBe(1);
+	});
 });

@@ -1,18 +1,18 @@
-import React from "react";
-import {shallow} from "enzyme";
+import React from 'react';
+import { shallow } from 'enzyme';
 
-import Search from "./index";
-import {findElementByDataTest} from "../../lib/testFunctions";
+import Search from './index';
+import { findElementByDataTest } from '../../lib/testFunctions';
 
-describe("Search Component", () => {
-  let component;
+describe('Search Component', () => {
+	let component;
 
-  beforeEach(() => {
-    component = shallow(<Search />);
-  });
-  it("Should render without crashing", () => {
-    const wrapper = findElementByDataTest(component, "searchComp");
+	beforeEach(() => {
+		component = shallow(<Search />);
+	});
+	it('Should render without crashing', () => {
+		const wrapper = findElementByDataTest(component, 'searchComp');
 
-    expect(wrapper.length).toBe(1);
-  });
+		expect(wrapper.length).toBe(1);
+	});
 });

@@ -1,3 +1,3 @@
-import HeroTabs from "./HeroTabs";
+import HeroTabs from './HeroTabs';
 
 export default HeroTabs;

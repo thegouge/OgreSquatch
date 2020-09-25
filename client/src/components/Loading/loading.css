@@ -1,124 +1,124 @@
 .loading {
-  background: black;
-  color: white;
-  box-sizing: border-box;
-  height: 100%;
+	background: black;
+	color: white;
+	box-sizing: border-box;
+	height: 100%;
 }
 
 .loading-text {
-  font-family: "bignoodletoo";
-  font-size: 60px;
-  margin: 0;
-  margin-bottom: 30px;
-  padding-top: 40px;
+	font-family: 'bignoodletoo';
+	font-size: 60px;
+	margin: 0;
+	margin-bottom: 30px;
+	padding-top: 40px;
 }
 
 .loading-link {
-  display: block;
-  margin-top: 50px;
-  color: white;
-  text-decoration: none;
+	display: block;
+	margin-top: 50px;
+	color: white;
+	text-decoration: none;
 }
 
 .loading-btn {
-  padding: 5px 10px;
+	padding: 5px 10px;
 }
 
 .overwatch-spinner {
-  box-sizing: border-box;
-  display: block;
-  width: 62px;
-  height: 80px;
-  margin: auto;
-  padding-bottom: 50px;
-  position: relative;
-  transform: scale(1.5);
-  font-family: sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  color: white;
+	box-sizing: border-box;
+	display: block;
+	width: 62px;
+	height: 80px;
+	margin: auto;
+	padding-bottom: 50px;
+	position: relative;
+	transform: scale(1.5);
+	font-family: sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	color: white;
 }
 .overwatch-spinner .hex {
-  position: absolute;
-  display: inline-block;
-  transform: rotateZ(90deg);
+	position: absolute;
+	display: inline-block;
+	transform: rotateZ(90deg);
 }
 .overwatch-spinner .hex::after {
-  content: "\2b22";
-  display: inline-block;
-  opacity: 0;
-  transform: scale(0);
-  animation: spinner-animation 3.5s linear infinite;
+	content: '\2b22';
+	display: inline-block;
+	opacity: 0;
+	transform: scale(0);
+	animation: spinner-animation 3.5s linear infinite;
 }
 .overwatch-spinner .hex:nth-child(7n + 1) {
-  left: 20px;
-  top: 0px;
+	left: 20px;
+	top: 0px;
 }
 .overwatch-spinner .hex:nth-child(7n + 1)::after {
-  animation-delay: 0s;
+	animation-delay: 0s;
 }
 .overwatch-spinner .hex:nth-child(7n + 2) {
-  left: 40px;
-  top: 12px;
+	left: 40px;
+	top: 12px;
 }
 .overwatch-spinner .hex:nth-child(7n + 2)::after {
-  animation-delay: 0.285s;
+	animation-delay: 0.285s;
 }
 .overwatch-spinner .hex:nth-child(7n + 3) {
-  left: 40px;
-  top: 35px;
+	left: 40px;
+	top: 35px;
 }
 .overwatch-spinner .hex:nth-child(7n + 3)::after {
-  animation-delay: 0.57s;
+	animation-delay: 0.57s;
 }
 .overwatch-spinner .hex:nth-child(7n + 4) {
-  left: 20px;
-  top: 45px;
+	left: 20px;
+	top: 45px;
 }
 .overwatch-spinner .hex:nth-child(7n + 4)::after {
-  animation-delay: 0.855s;
+	animation-delay: 0.855s;
 }
 .overwatch-spinner .hex:nth-child(7n + 5) {
-  left: 0px;
-  top: 35px;
+	left: 0px;
+	top: 35px;
 }
 .overwatch-spinner .hex:nth-child(7n + 5)::after {
-  animation-delay: 1.14s;
+	animation-delay: 1.14s;
 }
 .overwatch-spinner .hex:nth-child(7n + 6) {
-  left: 0px;
-  top: 12px;
+	left: 0px;
+	top: 12px;
 }
 .overwatch-spinner .hex:nth-child(7n + 6)::after {
-  animation-delay: 1.425s;
+	animation-delay: 1.425s;
 }
 .overwatch-spinner .hex:nth-child(7n + 7) {
-  left: 20px;
-  top: 23px;
+	left: 20px;
+	top: 23px;
 }
 .overwatch-spinner .hex:nth-child(7n + 7)::after {
-  animation-delay: 1.71s;
+	animation-delay: 1.71s;
 }
 
 @keyframes spinner-animation {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  25% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  70% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0);
-  }
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	25% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	60% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	70% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
 }
