@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Search /> },
       {
-        path: '/profile/:platform/:gamertag',
+        path: '/profile/:platform/:region/:gamertag',
         element: <Profile />,
       },
     ],
