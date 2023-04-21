@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'koverwatch';
+  src: url('../assets/fonts/koverwatch.ttf');
+}
+
+@font-face {
+  font-family: 'bignoodletoo';
+  src: url('../assets/fonts/bignoodletoo.ttf');
+}
+
+@font-face {
+  font-family: 'overwatch';
+  src: url('../assets/fonts/OPTIBankGothic-Light.otf');
+}
+
+@font-face {
+  font-family: 'buttons';
+  src: url('https://us.battle.net/forums/static/fonts/f014015d/f014015d.woff');
+}
+
+body,
+#root {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+
+  --button-blue: rgb(70, 138, 194);
+  --button-yellow: rgb(221, 155, 42);
+  --highlight-yellow: rgb(251, 206, 82);
+  --logo-silver: rgb(212, 213, 215);
+  --menu-card: rgb(240, 240, 234);
+}
