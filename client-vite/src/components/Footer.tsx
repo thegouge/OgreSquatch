@@ -26,8 +26,11 @@ export const Footer = () => {
       </div>
       <div className="credit">
         This app uses
-        <a className="credit-link" href="https://ovrstat.com/">
-          Ovrstat
+        <a
+          className="credit-link"
+          href="https://github.com/alfg/overwatch-api#overwatch-api"
+        >
+          Overwatch API
         </a>{' '}
         for fetching Overwatch stats
       </div>
