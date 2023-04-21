@@ -1,15 +1,16 @@
-import React from 'react'
+import { Outlet } from 'react-router-dom'
 import './styles/App.css'
 import { ToastProvider } from 'react-toast-notifications'
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import { Header, Footer } from './components'
 
 function App() {
   return (
     <ToastProvider>
       <div className="App" data-test="App">
         <Header />
-        <main>main content!</main>
+        <main>
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </ToastProvider>
