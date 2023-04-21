@@ -1,7 +1,7 @@
 import '../styles/Footer.css'
 import alexPhoto from '../assets/images/me.jpg?url'
 
-export const Footer = () => {
+export function Footer() {
   return (
     <footer className="" data-test="Footer">
       <div className="credit">
