@@ -1,0 +1,180 @@
+#hero-info {
+	grid-area: hero-info;
+	display: flex;
+	flex-direction: column;
+}
+
+#chosen-hero {
+	--background-overlay: rgba(266, 266, 266, 0.6);
+
+	height: 66%;
+	background-color: rgb(226, 226, 226);
+	border: 2px solid var(--logo-silver);
+	display: grid;
+	grid-template-areas:
+		'hero printout'
+		'medals printout';
+	grid-template-columns: 66% 34%;
+	transition: 0.3s;
+	margin-bottom: 5px;
+}
+
+.hero {
+	grid-area: hero;
+	margin: 0;
+	text-align: left;
+	background: var(--background-overlay);
+}
+.hero-name {
+	font-size: 40px;
+	margin: 5px 0 0 20px;
+}
+
+.printout {
+	grid-area: printout;
+	display: grid;
+	grid-template-areas:
+		'time won'
+		'kills deaths'
+		'assists quote';
+	padding: 5px;
+	background: var(--background-overlay);
+	height: 100%;
+}
+
+.printed-stat {
+	position: relative;
+	border: 3px solid rgb(66, 66, 66);
+	border-radius: 10px;
+	padding: 5px;
+	overflow: hidden;
+	width: 90%;
+	height: 90%;
+}
+
+.stat-title {
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	z-index: 1;
+	font-size: 290%;
+	color: rgba(87, 87, 87, 0.6);
+}
+
+.stat-stat {
+	position: absolute;
+	bottom: 0;
+	right: 6px;
+	z-index: 5;
+	font-size: 190%;
+}
+
+.medals {
+	grid-area: medals;
+	display: flex;
+	justify-content: space-around;
+	background: var(--background-overlay);
+}
+
+.medal-title {
+	grid-area: title;
+	font-weight: normal;
+	font-size: 30px;
+	margin: 0;
+}
+
+.printed-medal {
+	position: relative;
+}
+
+.medal-number {
+	position: relative;
+	bottom: 15%;
+	font-size: 200%;
+	text-align: center;
+	z-index: 10;
+	margin: auto;
+	text-shadow: 1px 1px 1px white;
+}
+
+.medal-img {
+	align-self: center;
+	position: relative;
+	top: 45px;
+	left: 3px;
+	display: block;
+	z-index: 1;
+	width: 100px;
+	margin: auto;
+}
+
+.back-link {
+	font-family: 'buttons';
+	display: block;
+	margin: 10px auto;
+	width: fit-content;
+	padding: 10px;
+	border: 1px solid white;
+	background: var(--button-yellow);
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.no-stats {
+	height: 66%;
+	font-size: 60px;
+	text-align: center;
+	margin: auto;
+}
+
+@media screen and (max-width: 935px) {
+	#hero-info {
+		width: 80%;
+		margin: auto;
+	}
+
+	.printed-stat {
+		height: 90%;
+	}
+
+	.stat-title {
+		font-size: 190%;
+		bottom: 30%;
+	}
+
+	.stat-stat {
+		font-size: 150%;
+	}
+
+	.medal-img {
+		top: 30px;
+		width: 80%;
+	}
+
+	.medal-number {
+		bottom: 25%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#chosen-hero {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.printout {
+		height: 200px;
+	}
+
+	.medal-img {
+		top: 0;
+	}
+
+	.medal-number {
+		bottom: 50%;
+		font-size: 150%;
+	}
+}
