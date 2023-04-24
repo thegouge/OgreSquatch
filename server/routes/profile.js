@@ -1,21 +1,22 @@
 const router = require('express').Router()
+
 const fetch = import('node-fetch')
 
-const dataClass = require('../lib/trimmedData.js')
+const DataClass = require('../lib/trimmedData.js')
 
-router.get('/:platform/:gamertag', async (req, res) => {
+router.get('/:platform/:region/:gamertag', async (req, res) => {
   try {
     const headers = {
       Accept: 'application/json',
       'Accept-Encoding': 'gzip',
     }
 
-    const { platform, gamertag } = req.params
+    const { platform, gamertag, region } = req.params
 
     console.log(`get request for ${gamertag}'s profile on ${platform}`)
 
     const response = await fetch(
-      `${process.env.TRACKER_API_URL}/${platform}/${gamertag}`,
+      `${process.env.TRACKER_API_URL}/${platform}/${region}/${gamertag}/complete`,
       { headers }
     )
 
@@ -28,7 +29,7 @@ router.get('/:platform/:gamertag', async (req, res) => {
       })
     }
 
-    res.json(new dataClass(data, platform))
+    res.json(new DataClass(data, platform))
   } catch (err) {
     console.error(err)
 
