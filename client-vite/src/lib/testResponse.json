@@ -1,0 +1,946 @@
+{
+  "username": "TheGouge",
+  "portrait": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/53a806f5d36251033fd1f493378715177eb21f88378d24ab64c11ca13048df2a.png",
+  "endorsement": "https://static.playoverwatch.com/img/pages/career/icons/endorsement/1-9de6d43ec5.svg#icon",
+  "private": false,
+  "stats": {
+    "top_heroes": {
+      "quickplay": {
+        "played": [
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "played": "06:45:31"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "played": "06:11:30"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "played": "05:19:54"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "played": "03:17:26"
+          },
+          {
+            "hero": "Symmetra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f2024c5387c9d76d944a5db021c2774d1e9d7cbf39e9b6a35b364d38ea250ac.png",
+            "played": "01:57:28"
+          },
+          {
+            "hero": "Lúcio",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png",
+            "played": "01:44:55"
+          },
+          {
+            "hero": "D.Va",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png",
+            "played": "01:41:46"
+          },
+          {
+            "hero": "Reinhardt",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/490d2f79f8547d6e364306af60c8184fb8024b8e55809e4cc501126109981a65.png",
+            "played": "01:26:33"
+          },
+          {
+            "hero": "Cassidy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cfb48b5597b657c2eafb1277dc5eef4a07eae90c265fcd37ed798189619f0a5.png",
+            "played": "01:15:36"
+          },
+          {
+            "hero": "Ana",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png",
+            "played": "01:14:38"
+          },
+          {
+            "hero": "Mei",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png",
+            "played": "01:11:24"
+          },
+          {
+            "hero": "Widowmaker",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png",
+            "played": "01:04:34"
+          },
+          {
+            "hero": "Pharah",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f8261595eca3e43e3b37cadb8161902cc416e38b7e0caa855f4555001156d814.png",
+            "played": "53:28"
+          },
+          {
+            "hero": "Genji",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4edf5ea6d58c449a2aeb619a3fda9fff36a069dfbe4da8bc5d8ec1c758ddb8dc.png",
+            "played": "40:33"
+          },
+          {
+            "hero": "Torbjörn",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1309ab1add1cc19189a2c8bc7b1471f88efa1073e9705d2397fdb37d45707d01.png",
+            "played": "34:19"
+          },
+          {
+            "hero": "Moira",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/000beeb5606e01497897fa9210dd3b1e78e1159ebfd8afdc9e989047d7d3d08f.png",
+            "played": "25:17"
+          },
+          {
+            "hero": "Hanzo",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aecd8fa677f0093344fab7ccb7c37516c764df3f5ff339a5a845a030a27ba7e0.png",
+            "played": "22:21"
+          },
+          {
+            "hero": "Bastion",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png",
+            "played": "19:09"
+          },
+          {
+            "hero": "Reaper",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2edb9af69d987bb503cd31f7013ae693640e692b321a73d175957b9e64394f40.png",
+            "played": "16:17"
+          },
+          {
+            "hero": "Sombra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bca8532688f01b071806063b9472f1c0f9fc9c7948e6b59e210006e69cec9022.png",
+            "played": "16:12"
+          },
+          {
+            "hero": "Zenyatta",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png",
+            "played": "12:53"
+          },
+          {
+            "hero": "Orisa",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71e96294617e81051d120b5d04b491bb1ea40e2933da44d6631aae149aac411d.png",
+            "played": "10:43"
+          },
+          {
+            "hero": "Doomfist",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png",
+            "played": "05:40"
+          },
+          {
+            "hero": "Winston",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd9c8e634d89488459dfc1aeb21b602fa5c39aa05601a4167682f3a3fed4e0ee.png",
+            "played": "05:33"
+          },
+          {
+            "hero": "Roadhog",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72e02e747b66b61fcbc02d35d350770b3ec7cbaabd0a7ca17c0d82743d43a7e8.png",
+            "played": "05:21"
+          },
+          {
+            "hero": "Brigitte",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/48392820c6976ee1cd8dde13e71df85bf15560083ee5c8658fe7c298095d619a.png",
+            "played": "05:09"
+          },
+          {
+            "hero": "Junkrat",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png",
+            "played": "04:01"
+          }
+        ],
+        "games_won": [
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "games_won": "26"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "games_won": "19"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "games_won": "18"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "games_won": "13"
+          },
+          {
+            "hero": "Symmetra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f2024c5387c9d76d944a5db021c2774d1e9d7cbf39e9b6a35b364d38ea250ac.png",
+            "games_won": "10"
+          },
+          {
+            "hero": "Reinhardt",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/490d2f79f8547d6e364306af60c8184fb8024b8e55809e4cc501126109981a65.png",
+            "games_won": "8"
+          },
+          {
+            "hero": "D.Va",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png",
+            "games_won": "7"
+          },
+          {
+            "hero": "Widowmaker",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png",
+            "games_won": "6"
+          },
+          {
+            "hero": "Mei",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png",
+            "games_won": "5"
+          },
+          {
+            "hero": "Ana",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png",
+            "games_won": "5"
+          },
+          {
+            "hero": "Lúcio",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png",
+            "games_won": "4"
+          },
+          {
+            "hero": "Pharah",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f8261595eca3e43e3b37cadb8161902cc416e38b7e0caa855f4555001156d814.png",
+            "games_won": "3"
+          },
+          {
+            "hero": "Cassidy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cfb48b5597b657c2eafb1277dc5eef4a07eae90c265fcd37ed798189619f0a5.png",
+            "games_won": "3"
+          },
+          {
+            "hero": "Hanzo",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aecd8fa677f0093344fab7ccb7c37516c764df3f5ff339a5a845a030a27ba7e0.png",
+            "games_won": "3"
+          },
+          {
+            "hero": "Genji",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4edf5ea6d58c449a2aeb619a3fda9fff36a069dfbe4da8bc5d8ec1c758ddb8dc.png",
+            "games_won": "2"
+          },
+          {
+            "hero": "Torbjörn",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1309ab1add1cc19189a2c8bc7b1471f88efa1073e9705d2397fdb37d45707d01.png",
+            "games_won": "1"
+          },
+          {
+            "hero": "Orisa",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71e96294617e81051d120b5d04b491bb1ea40e2933da44d6631aae149aac411d.png",
+            "games_won": "1"
+          },
+          {
+            "hero": "Sombra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bca8532688f01b071806063b9472f1c0f9fc9c7948e6b59e210006e69cec9022.png",
+            "games_won": "1"
+          },
+          {
+            "hero": "Reaper",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2edb9af69d987bb503cd31f7013ae693640e692b321a73d175957b9e64394f40.png",
+            "games_won": "1"
+          },
+          {
+            "hero": "Bastion",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png",
+            "games_won": "1"
+          },
+          {
+            "hero": "Winston",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd9c8e634d89488459dfc1aeb21b602fa5c39aa05601a4167682f3a3fed4e0ee.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Junkrat",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Zenyatta",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Roadhog",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72e02e747b66b61fcbc02d35d350770b3ec7cbaabd0a7ca17c0d82743d43a7e8.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Doomfist",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Brigitte",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/48392820c6976ee1cd8dde13e71df85bf15560083ee5c8658fe7c298095d619a.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Moira",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/000beeb5606e01497897fa9210dd3b1e78e1159ebfd8afdc9e989047d7d3d08f.png",
+            "games_won": "0"
+          }
+        ],
+        "weapon_accuracy": [
+          {
+            "hero": "Zenyatta",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png",
+            "weapon_accuracy": "43%"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "weapon_accuracy": "38%"
+          },
+          {
+            "hero": "Pharah",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f8261595eca3e43e3b37cadb8161902cc416e38b7e0caa855f4555001156d814.png",
+            "weapon_accuracy": "38%"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "weapon_accuracy": "34%"
+          },
+          {
+            "hero": "Cassidy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cfb48b5597b657c2eafb1277dc5eef4a07eae90c265fcd37ed798189619f0a5.png",
+            "weapon_accuracy": "31%"
+          },
+          {
+            "hero": "Orisa",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71e96294617e81051d120b5d04b491bb1ea40e2933da44d6631aae149aac411d.png",
+            "weapon_accuracy": "31%"
+          },
+          {
+            "hero": "Genji",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4edf5ea6d58c449a2aeb619a3fda9fff36a069dfbe4da8bc5d8ec1c758ddb8dc.png",
+            "weapon_accuracy": "30%"
+          },
+          {
+            "hero": "Widowmaker",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png",
+            "weapon_accuracy": "30%"
+          },
+          {
+            "hero": "Sombra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bca8532688f01b071806063b9472f1c0f9fc9c7948e6b59e210006e69cec9022.png",
+            "weapon_accuracy": "29%"
+          },
+          {
+            "hero": "Lúcio",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png",
+            "weapon_accuracy": "28%"
+          },
+          {
+            "hero": "Mei",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png",
+            "weapon_accuracy": "28%"
+          },
+          {
+            "hero": "Doomfist",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png",
+            "weapon_accuracy": "28%"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "weapon_accuracy": "26%"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "weapon_accuracy": "26%"
+          },
+          {
+            "hero": "Reaper",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2edb9af69d987bb503cd31f7013ae693640e692b321a73d175957b9e64394f40.png",
+            "weapon_accuracy": "25%"
+          },
+          {
+            "hero": "D.Va",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png",
+            "weapon_accuracy": "24%"
+          },
+          {
+            "hero": "Torbjörn",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1309ab1add1cc19189a2c8bc7b1471f88efa1073e9705d2397fdb37d45707d01.png",
+            "weapon_accuracy": "22%"
+          },
+          {
+            "hero": "Bastion",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png",
+            "weapon_accuracy": "22%"
+          },
+          {
+            "hero": "Hanzo",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aecd8fa677f0093344fab7ccb7c37516c764df3f5ff339a5a845a030a27ba7e0.png",
+            "weapon_accuracy": "20%"
+          },
+          {
+            "hero": "Junkrat",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png",
+            "weapon_accuracy": "17%"
+          },
+          {
+            "hero": "Roadhog",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72e02e747b66b61fcbc02d35d350770b3ec7cbaabd0a7ca17c0d82743d43a7e8.png",
+            "weapon_accuracy": "14%"
+          },
+          {
+            "hero": "Ana",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png",
+            "weapon_accuracy": "12%"
+          },
+          {
+            "hero": "Reinhardt",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/490d2f79f8547d6e364306af60c8184fb8024b8e55809e4cc501126109981a65.png",
+            "weapon_accuracy": "0"
+          },
+          {
+            "hero": "Winston",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd9c8e634d89488459dfc1aeb21b602fa5c39aa05601a4167682f3a3fed4e0ee.png",
+            "weapon_accuracy": "0"
+          },
+          {
+            "hero": "Symmetra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f2024c5387c9d76d944a5db021c2774d1e9d7cbf39e9b6a35b364d38ea250ac.png",
+            "weapon_accuracy": "0"
+          },
+          {
+            "hero": "Brigitte",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/48392820c6976ee1cd8dde13e71df85bf15560083ee5c8658fe7c298095d619a.png",
+            "weapon_accuracy": "0"
+          },
+          {
+            "hero": "Moira",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/000beeb5606e01497897fa9210dd3b1e78e1159ebfd8afdc9e989047d7d3d08f.png",
+            "weapon_accuracy": "0"
+          }
+        ],
+        "eliminations_per_life": [
+          {
+            "hero": "Orisa",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71e96294617e81051d120b5d04b491bb1ea40e2933da44d6631aae149aac411d.png",
+            "eliminations_per_life": "2.13"
+          },
+          {
+            "hero": "D.Va",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png",
+            "eliminations_per_life": "1.90"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "eliminations_per_life": "1.65"
+          },
+          {
+            "hero": "Symmetra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f2024c5387c9d76d944a5db021c2774d1e9d7cbf39e9b6a35b364d38ea250ac.png",
+            "eliminations_per_life": "1.63"
+          },
+          {
+            "hero": "Torbjörn",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1309ab1add1cc19189a2c8bc7b1471f88efa1073e9705d2397fdb37d45707d01.png",
+            "eliminations_per_life": "1.59"
+          },
+          {
+            "hero": "Bastion",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png",
+            "eliminations_per_life": "1.58"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "eliminations_per_life": "1.55"
+          },
+          {
+            "hero": "Zenyatta",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png",
+            "eliminations_per_life": "1.36"
+          },
+          {
+            "hero": "Widowmaker",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png",
+            "eliminations_per_life": "1.34"
+          },
+          {
+            "hero": "Pharah",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f8261595eca3e43e3b37cadb8161902cc416e38b7e0caa855f4555001156d814.png",
+            "eliminations_per_life": "1.15"
+          },
+          {
+            "hero": "Mei",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png",
+            "eliminations_per_life": "1.12"
+          },
+          {
+            "hero": "Hanzo",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aecd8fa677f0093344fab7ccb7c37516c764df3f5ff339a5a845a030a27ba7e0.png",
+            "eliminations_per_life": "1.04"
+          },
+          {
+            "hero": "Lúcio",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png",
+            "eliminations_per_life": "0.98"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "eliminations_per_life": "0.93"
+          },
+          {
+            "hero": "Sombra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bca8532688f01b071806063b9472f1c0f9fc9c7948e6b59e210006e69cec9022.png",
+            "eliminations_per_life": "0.92"
+          },
+          {
+            "hero": "Genji",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4edf5ea6d58c449a2aeb619a3fda9fff36a069dfbe4da8bc5d8ec1c758ddb8dc.png",
+            "eliminations_per_life": "0.89"
+          },
+          {
+            "hero": "Ana",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png",
+            "eliminations_per_life": "0.88"
+          },
+          {
+            "hero": "Moira",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/000beeb5606e01497897fa9210dd3b1e78e1159ebfd8afdc9e989047d7d3d08f.png",
+            "eliminations_per_life": "0.88"
+          },
+          {
+            "hero": "Winston",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd9c8e634d89488459dfc1aeb21b602fa5c39aa05601a4167682f3a3fed4e0ee.png",
+            "eliminations_per_life": "0.83"
+          },
+          {
+            "hero": "Reaper",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2edb9af69d987bb503cd31f7013ae693640e692b321a73d175957b9e64394f40.png",
+            "eliminations_per_life": "0.75"
+          },
+          {
+            "hero": "Reinhardt",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/490d2f79f8547d6e364306af60c8184fb8024b8e55809e4cc501126109981a65.png",
+            "eliminations_per_life": "0.74"
+          },
+          {
+            "hero": "Cassidy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cfb48b5597b657c2eafb1277dc5eef4a07eae90c265fcd37ed798189619f0a5.png",
+            "eliminations_per_life": "0.67"
+          },
+          {
+            "hero": "Doomfist",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png",
+            "eliminations_per_life": "0.36"
+          },
+          {
+            "hero": "Roadhog",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72e02e747b66b61fcbc02d35d350770b3ec7cbaabd0a7ca17c0d82743d43a7e8.png",
+            "eliminations_per_life": "0.30"
+          },
+          {
+            "hero": "Junkrat",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png",
+            "eliminations_per_life": "0.25"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "eliminations_per_life": "0.09"
+          },
+          {
+            "hero": "Brigitte",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/48392820c6976ee1cd8dde13e71df85bf15560083ee5c8658fe7c298095d619a.png",
+            "eliminations_per_life": "0"
+          }
+        ],
+        "multikill_best": [
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "multikill_best": "4"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "multikill_best": "3"
+          },
+          {
+            "hero": "D.Va",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png",
+            "multikill_best": "3"
+          },
+          {
+            "hero": "Mei",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png",
+            "multikill_best": "3"
+          },
+          {
+            "hero": "Reaper",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2edb9af69d987bb503cd31f7013ae693640e692b321a73d175957b9e64394f40.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Hanzo",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aecd8fa677f0093344fab7ccb7c37516c764df3f5ff339a5a845a030a27ba7e0.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Torbjörn",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1309ab1add1cc19189a2c8bc7b1471f88efa1073e9705d2397fdb37d45707d01.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Reinhardt",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/490d2f79f8547d6e364306af60c8184fb8024b8e55809e4cc501126109981a65.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Pharah",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f8261595eca3e43e3b37cadb8161902cc416e38b7e0caa855f4555001156d814.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Winston",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd9c8e634d89488459dfc1aeb21b602fa5c39aa05601a4167682f3a3fed4e0ee.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Widowmaker",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Bastion",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Symmetra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f2024c5387c9d76d944a5db021c2774d1e9d7cbf39e9b6a35b364d38ea250ac.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Zenyatta",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Genji",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4edf5ea6d58c449a2aeb619a3fda9fff36a069dfbe4da8bc5d8ec1c758ddb8dc.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Roadhog",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72e02e747b66b61fcbc02d35d350770b3ec7cbaabd0a7ca17c0d82743d43a7e8.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Cassidy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cfb48b5597b657c2eafb1277dc5eef4a07eae90c265fcd37ed798189619f0a5.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Junkrat",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Lúcio",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Sombra",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bca8532688f01b071806063b9472f1c0f9fc9c7948e6b59e210006e69cec9022.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Doomfist",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Ana",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Orisa",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71e96294617e81051d120b5d04b491bb1ea40e2933da44d6631aae149aac411d.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Brigitte",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/48392820c6976ee1cd8dde13e71df85bf15560083ee5c8658fe7c298095d619a.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Moira",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/000beeb5606e01497897fa9210dd3b1e78e1159ebfd8afdc9e989047d7d3d08f.png",
+            "multikill_best": "0"
+          }
+        ],
+        "objective_kills_average": []
+      },
+      "competitive": {
+        "played": [
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "played": "10:20"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "played": "07:23"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "played": "00:58"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "played": "00:55"
+          }
+        ],
+        "games_won": [
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "games_won": "0"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "games_won": "0"
+          }
+        ],
+        "win_rate": [
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "win_rate": "0"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "win_rate": "0"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "win_rate": "0"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "win_rate": "0"
+          }
+        ],
+        "weapon_accuracy": [
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "weapon_accuracy": "31%"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "weapon_accuracy": "17%"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "weapon_accuracy": "17%"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "weapon_accuracy": "8%"
+          }
+        ],
+        "eliminations_per_life": [
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "eliminations_per_life": "1.38"
+          },
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "eliminations_per_life": "0"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "eliminations_per_life": "0"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "eliminations_per_life": "0"
+          }
+        ],
+        "multikill_best": [
+          {
+            "hero": "Tracer",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Mercy",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Zarya",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png",
+            "multikill_best": "0"
+          },
+          {
+            "hero": "Soldier: 76",
+            "img": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png",
+            "multikill_best": "0"
+          }
+        ],
+        "objective_kills_average": []
+      }
+    },
+    "combat": {
+      "quickplay": [
+        { "title": "Multikills", "value": "11" },
+        { "title": "Melee Final Blows", "value": "3" },
+        { "title": "Damage Done", "value": "82737" },
+        { "title": "Hero Damage Done", "value": "82737" },
+        { "title": "Eliminations", "value": "2228" },
+        { "title": "Deaths", "value": "2067" },
+        { "title": "Objective Kills", "value": "911" },
+        { "title": "Final Blows", "value": "931" },
+        { "title": "Objective Time", "value": "03:48:53" },
+        { "title": "Environmental Kills", "value": "5" },
+        { "title": "Solo Kills", "value": "307" }
+      ],
+      "competitive": [
+        { "title": "Damage Done", "value": "6979" },
+        { "title": "Hero Damage Done", "value": "6979" },
+        { "title": "Eliminations", "value": "12" },
+        { "title": "Deaths", "value": "22" },
+        { "title": "Objective Kills", "value": "6" },
+        { "title": "Final Blows", "value": "6" },
+        { "title": "Objective Time", "value": "02:12" },
+        { "title": "Solo Kill", "value": "1" }
+      ]
+    },
+    "match_awards": {
+      "quickplay": [{ "title": "Cards", "value": "97" }],
+      "competitive": []
+    },
+    "assists": {
+      "quickplay": [
+        { "title": "Healing Done", "value": "397703" },
+        { "title": "Defensive Assists", "value": "548" },
+        { "title": "Offensive Assists", "value": "165" }
+      ],
+      "competitive": [
+        { "title": "Healing Done", "value": "6983" },
+        { "title": "Defensive Assists", "value": "11" },
+        { "title": "Offensive Assist", "value": "1" }
+      ]
+    },
+    "average": {
+      "quickplay": [
+        { "title": "Hero Damage Done - Avg per 10 Min", "value": "2513" },
+        { "title": "Eliminations - Avg per 10 Min", "value": "9.82" },
+        { "title": "Deaths - Avg per 10 Min", "value": "9.11" },
+        { "title": "Healing Done - Avg per 10 Min", "value": "1753" },
+        { "title": "Objective Kills - Avg per 10 Min", "value": "4.02" },
+        { "title": "Objective Time - Avg per 10 Min", "value": "01:01" },
+        { "title": "Final Blows - Avg per 10 Min", "value": "4.10" },
+        { "title": "Solo Kills - Avg per 10 Min", "value": "1.35" }
+      ],
+      "competitive": [
+        { "title": "Hero Damage Done - Avg per 10 Min", "value": "3562" },
+        { "title": "Eliminations - Avg per 10 Min", "value": "6.12" },
+        { "title": "Deaths - Avg per 10 Min", "value": "11.23" },
+        { "title": "Healing Done - Avg per 10 Min", "value": "3564" },
+        { "title": "Objective Kills - Avg per 10 Min", "value": "3.06" },
+        { "title": "Objective Time - Avg per 10 Min", "value": "01:07" },
+        { "title": "Final Blows - Avg per 10 Min", "value": "3.06" },
+        { "title": "Solo Kills - Avg per 10 Min", "value": "0.51" }
+      ]
+    },
+    "miscellaneous": { "quickplay": [], "competitive": [] },
+    "best": {
+      "quickplay": [
+        { "title": "Eliminations - Most in Game", "value": "24" },
+        { "title": "Final Blows - Most in Game", "value": "13" },
+        { "title": "All Damage Done - Most in Game", "value": "11508" },
+        { "title": "Healing Done - Most in Game", "value": "9971" },
+        { "title": "Defensive Assists - Most in Game", "value": "24" },
+        { "title": "Offensive Assists - Most in Game", "value": "10" },
+        { "title": "Objective Kills - Most in Game", "value": "17" },
+        { "title": "Objective Time - Most in Game", "value": "05:17" },
+        { "title": "Multikill - Best", "value": "4" },
+        { "title": "Solo Kills - Most in Game", "value": "13" },
+        { "title": "Time Spent on Fire - Most in Game", "value": "08:21" },
+        { "title": "Melee Final Blow - Most in Game", "value": "1" },
+        { "title": "Environmental Kill - Most in Game", "value": "1" },
+        { "title": "Kill Streak - Best", "value": "24" },
+        { "title": "Hero Damage Done - Most in Game", "value": "8351" },
+        { "title": "Barrier Damage Done - Most in Game", "value": "3141" },
+        { "title": "Recon Assists - Most in Game", "value": "11" }
+      ],
+      "competitive": [
+        { "title": "Eliminations - Most in Game", "value": "9" },
+        { "title": "Final Blows - Most in Game", "value": "5" },
+        { "title": "All Damage Done - Most in Game", "value": "7415" },
+        { "title": "Healing Done - Most in Game", "value": "5130" },
+        { "title": "Defensive Assists - Most in Game", "value": "10" },
+        { "title": "Offensive Assist - Most in Game", "value": "1" },
+        { "title": "Objective Kills - Most in Game", "value": "5" },
+        { "title": "Objective Time - Most in Game", "value": "01:50" },
+        { "title": "Solo Kills - Most in Game", "value": "5" },
+        { "title": "Time Spent on Fire - Most in Game", "value": "00:29" },
+        { "title": "Kill Streak - Best", "value": "9" },
+        { "title": "Hero Damage Done - Most in Game", "value": "5086" },
+        { "title": "Barrier Damage Done - Most in Game", "value": "2195" }
+      ]
+    },
+    "game": {
+      "quickplay": [
+        { "title": "Time Played", "value": "37:48:11" },
+        { "title": "Games Played", "value": "309" },
+        { "title": "Games Won", "value": "137" },
+        { "title": "Games Lost", "value": "172" }
+      ],
+      "competitive": [
+        { "title": "Time Played", "value": "19:36" },
+        { "title": "Games Played", "value": "2" },
+        { "title": "Games Lost", "value": "2" }
+      ]
+    }
+  }
+}
