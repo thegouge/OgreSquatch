@@ -1,19 +1,18 @@
 import { Outlet } from 'react-router-dom'
 import './styles/App.css'
-import { ToastProvider } from 'react-toast-notifications'
+import { ToastContainer } from 'react-toastify'
 import { Header, Footer } from './components'
 
 function App() {
   return (
-    <ToastProvider>
-      <div className="App" data-test="App">
-        <Header />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
-    </ToastProvider>
+    <div className="App" data-test="App">
+      <ToastContainer autoClose={8000} />
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
