@@ -7,7 +7,8 @@
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
     "install:all": "yarn install && yarn install --prefix client && yarn install --prefix server",
-    "start": "concurrently \"yarn server\" \"yarn client\"",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "start": "node ./server/server.js",
     "predeploy": "yarn build --prefix client",
     "deploy": "echo 'still working on that'"
   },
