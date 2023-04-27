@@ -1,14 +1,21 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const cors = require('cors')
 
 dotenv.config({ path: './config.env' })
 
 const app = express()
 
+app.use(
+  cors({
+    origin: '*',
+  })
+)
 // Profile Routes
-app.use('/api/v1', (req, res) => {
+app.use('/api/v1/test', (req, res) => {
   res.send('hello!')
 })
+
 app.use('/api/v1/profile', require('./routes/profile'))
 
 // Handle Production

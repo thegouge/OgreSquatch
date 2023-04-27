@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import formatHeroName from '../lib/formatHeroName'
 
-import bronzeMedal from '../assets/images/medals/bronze.png?url'
-import silverMedal from '../assets/images/medals/silver.png?url'
-import goldMedal from '../assets/images/medals/bronze.png?url'
+import bronzeMedal from '../assets/images/medals/bronze.png'
+import silverMedal from '../assets/images/medals/silver.png'
+import goldMedal from '../assets/images/medals/gold.png'
 
 import '../styles/Stats.css'
 import '../styles/toggle.css'

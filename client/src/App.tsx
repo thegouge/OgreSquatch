@@ -3,7 +3,7 @@ import './styles/App.css'
 import { ToastContainer } from 'react-toastify'
 import { Header, Footer } from './components'
 
-function App() {
+export default function App() {
   return (
     <div className="App" data-test="App">
       <ToastContainer autoClose={8000} />
@@ -15,5 +15,3 @@ function App() {
     </div>
   )
 }
-
-export default App

@@ -1,39 +1,17 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-
+import { useState } from 'react'
+import { Link, useLoaderData } from 'react-router-dom'
 import { Loading, HeroTabList, Stats } from '../components'
-
 import '../styles/Profile.css'
+import logo from '../assets/images/logo.png'
 
-export function Profile({ match }) {
+export function Profile() {
   // State
   const [playMode, setPlaymode] = useState('quick')
   const [selectedHero, setSelectedHero] = useState('all-Heroes')
-  const [playerData, setPlayerData] = useState({ name: match.params.gamertag })
-  const api = `/api/v1/profile/${match.params.platform}/${match.params.region}/${match.params.gamertag}`
-
-  useEffect(() => {
-    async function fetchUrl(url: string) {
-      try {
-        const response = await fetch(url)
-        const json = await response.json()
-        if (json.error) {
-          setPlayerData({ ...playerData, ...json })
-        } else {
-          setPlayerData(json)
-        }
-      } catch (error) {
-        console.log('error!')
-        console.error(error)
-        setPlayerData({ ...playerData, error })
-      }
-    }
-
-    fetchUrl(api)
-  }, [api])
+  const playerData = useLoaderData() as PlayerData
 
   // Methods
-  const chooseHero = (name) => {
+  const chooseHero = (name: string) => {
     setSelectedHero(name)
   }
 
@@ -46,8 +24,8 @@ export function Profile({ match }) {
   }
 
   // Error "Handling"
-  if (playerData.error) {
-    console.error(`${playerData.error}: ${playerData.message}`)
+  if (playerData?.error) {
+    console.error(`${playerData.error}: ${playerData.error.message}`)
 
     let errorMessage
     switch (playerData.error) {
@@ -84,11 +62,7 @@ export function Profile({ match }) {
   const levelIcon =
     selectedHero === 'all-Heroes' ? (
       <div className="level-icon-comp">
-        <img
-          src={require(`../../assets/images/logo.png`)}
-          alt="selectedHero"
-          className="logo"
-        />
+        <img src={logo} alt="selectedHero" className="logo" />
       </div>
     ) : (
       <div className="level-icon-comp">
@@ -101,7 +75,7 @@ export function Profile({ match }) {
           />
         )}
         <img
-          src={require(`../../assets/images/heroes/${selectedHero}.png`)}
+          src={import(`../assets/images/heroes/${selectedHero}.png`).default}
           alt="Selected Hero"
           className="curr-hero-port"
         />
@@ -137,7 +111,7 @@ export function Profile({ match }) {
 
       <Stats
         heroData={playerData.heroes[selectedHero]}
-        mode={playMode}
+        playMode={playMode}
         changePlayMode={changePlayMode}
       />
     </section>
