@@ -4,11 +4,12 @@
   "description": "overwatch stat tracker based on the traversy media tutorial",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server --prefix server",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "predeploy": "npm run build --prefix client",
-    "deploy": "git push heroku master"
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "install:all": "yarn install && yarn install --prefix client && yarn install --prefix server",
+    "start": "concurrently \"yarn server\" \"yarn client\"",
+    "predeploy": "yarn build --prefix client",
+    "deploy": "echo 'still working on that'"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",

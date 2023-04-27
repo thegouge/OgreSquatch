@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { redirect } from 'react-router-dom'
-import { useToasts } from 'react-toast-notifications'
+import { redirect, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 import '../styles/Search.css'
 
@@ -8,8 +8,7 @@ export function Search() {
   const [platform, setPlatform] = useState('')
   const [region, setRegion] = useState('')
   const [gamertag, setGamertag] = useState('')
-  const [ready, setReady] = useState(false)
-  const { addToast } = useToasts()
+  const navigate = useNavigate()
 
   let placeholderText = ''
 
@@ -43,54 +42,40 @@ export function Search() {
     setGamertag(event?.target?.value ?? '')
   }
 
-  const authenticateSearch = () => {
+  const authenticateSearch = (event: React.FormEvent) => {
+    event.preventDefault()
     // Platform Booleans
     if (platform === '') {
-      addToast('You need to Choose a Platform!', {
-        appearance: 'error',
-        autoDismiss: true,
-      })
+      toast.error('You need to Choose a Platform!')
       return false
     }
     if (region === '') {
-      addToast('You need to Choose a Region!', {
-        appearance: 'error',
-        autoDismiss: true,
-      })
+      toast.error('You need to Choose a Region!')
       return false
     }
     if (gamertag === '') {
-      addToast('You need to write a user name!', {
-        appearance: 'error',
-        autoDismiss: true,
-      })
+      toast.error('You need to write a user name!')
       return false
     }
     if (platform === 'pc' && gamertag.search(/#(?=\d{4})/) < 0) {
-      addToast(
-        'A Battle.Net profile needs to have a battle tag (a hashtag followed by numbers)',
-        { appearance: 'warning', autoDismiss: true }
+      toast.warn(
+        'A Battle.Net profile needs to have a battle tag (a hashtag followed by numbers)'
       )
       return false
     }
 
-    return true
+    return handleSubmit()
   }
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault()
+  const handleSubmit = () => {
+    let urlGamertag = gamertag
 
-    if (authenticateSearch()) {
-      if (platform === 'pc') {
-        // This replaces the '#' in the blizzard battle tag with a '-'
-        setGamertag(gamertag.replace(/#(?=\d{4})/, '-'))
-      }
-      setReady(true)
+    if (platform === 'pc') {
+      // This replaces the '#' in the blizzard battle tag with a '-'
+      urlGamertag = gamertag.replace(/#(?=\d{4})/, '-')
     }
-  }
 
-  if (ready) {
-    redirect(`/profile/${platform}/${region}/${gamertag}`)
+    return navigate(`/profile/${platform}/${region}/${urlGamertag}`)
   }
 
   return (
@@ -149,7 +134,11 @@ export function Search() {
             />
           </div>
         </div>
-        <input type="submit" className="overwatch-button-primary" />
+        <input
+          type="submit"
+          className="overwatch-button-primary p-2 text-2xl"
+          onClick={authenticateSearch}
+        />
       </form>
     </section>
   )

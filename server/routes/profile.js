@@ -1,6 +1,7 @@
 const router = require('express').Router()
 
-const fetch = import('node-fetch')
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args))
 
 const DataClass = require('../lib/trimmedData.js')
 
@@ -19,7 +20,10 @@ router.get('/:platform/:region/:gamertag', async (req, res) => {
       `${process.env.TRACKER_API_URL}/${platform}/${region}/${gamertag}/complete`,
       { headers }
     )
-
+    if (!response.ok) {
+      throw response
+    }
+    console.log({ response })
     const data = await response.json()
 
     if (data.message === 'Player not found') {
@@ -33,8 +37,8 @@ router.get('/:platform/:region/:gamertag', async (req, res) => {
   } catch (err) {
     console.error(err)
 
-    res.status(500).json({
-      error: 500,
+    res.status(err.status).json({
+      error: err.status,
       message: 'something went wrong on the server',
     })
   }
