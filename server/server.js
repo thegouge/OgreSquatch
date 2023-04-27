@@ -6,11 +6,13 @@ dotenv.config({ path: './config.env' })
 
 const app = express()
 
-app.use(
-  cors({
-    origin: '*',
-  })
-)
+if (process.env.NODE_ENV === 'development') {
+  app.use(
+    cors({
+      origin: '*',
+    })
+  )
+}
 // Profile Routes
 app.use('/api/v1/test', (req, res) => {
   res.send('hello!')
