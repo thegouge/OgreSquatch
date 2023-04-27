@@ -2,14 +2,14 @@
   "name": "ogre-squatch",
   "version": "1.1.0",
   "description": "overwatch stat tracker based on the traversy media tutorial",
-  "main": "./server/server.js",
+  "main": "server.js",
   "scripts": {
-    "server": "npm run dev --prefix server",
-    "client": "npm run dev --prefix client",
+    "server": "nodemon server",
+    "client": "npm run start --prefix client",
+    "build": "yarn install",
+    "start": "node server.js",
     "install:all": "yarn install && yarn install --prefix client && yarn install --prefix server",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "build": "yarn install:all",
-    "start": "node ./server/server.js",
     "predeploy": "yarn build --prefix client",
     "deploy": "echo 'still working on that'"
   },
@@ -17,6 +17,11 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.0.1",
-    "dotenv": "^16.0.3"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "node-fetch": "^3.3.1",
+    "nodemon": "^2.0.4",
+    "ogre-squatch": "file:.."
   }
 }
