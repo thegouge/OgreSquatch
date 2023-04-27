@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon server",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "nodemon server",
     "predeploy": "npm run build --prefix client",
     "deploy": "git push heroku master"
   },
@@ -14,9 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "node-fetch": "^3.3.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "ogre-squatch": "file:.."
   }
 }

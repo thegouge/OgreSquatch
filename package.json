@@ -7,10 +7,9 @@
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
     "install:all": "yarn install && yarn install --prefix client && yarn install --prefix server",
-    "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "build": "yarn build --prefix client",
-    "deploy": "echo 'still working on that'",
-    "start": "node ./server/server.js"
+    "start": "concurrently \"yarn server\" \"yarn client\"",
+    "predeploy": "yarn build --prefix client",
+    "deploy": "echo 'still working on that'"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",

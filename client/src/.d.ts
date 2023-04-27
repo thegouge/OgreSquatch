@@ -13,3 +13,17 @@ type HeroObject = {
     }
   }
 }
+
+type PlayerData = {
+  name: string
+  heroes: any
+  profile: {
+    name: string
+    icons: {
+      levelIcon: string
+      prestigeIcon: string
+      profileIcon: string
+    }
+  }
+  error?: any
+}
