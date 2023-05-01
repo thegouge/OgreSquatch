@@ -9,7 +9,5 @@ export default defineConfig({
       '~/': './src',
     },
   },
-  build: {
-    outDir: 'build',
-  },
+  base: '/OgreSquatch/',
 })
