@@ -24,7 +24,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "predeploy": "set VITE_SERVER_API=https://ogresquatch-production.up.railway.app && yarn build",
+    "predeploy": "set VITE_SERVER_API=https://ogresquatch-production.up.railway.app&& yarn build",
     "deploy": "gh-pages -d dist",
     "start": "vite start"
   },
