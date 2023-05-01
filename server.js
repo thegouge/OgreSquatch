@@ -6,10 +6,14 @@ dotenv.config({ path: './config.env' })
 
 const app = express()
 
+const allowedOrigins = ['https://thegouge.github.io']
+
 if (process.env.NODE_ENV === 'development') {
+  app.use(cors())
+} else {
   app.use(
     cors({
-      origin: '*',
+      origin: allowedOrigins,
     })
   )
 }
