@@ -11,8 +11,8 @@
     "install:all": "yarn install && yarn install --prefix client",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
     "predeploy": "yarn install:all",
-    "deploy": "cd client && yarn deploy && cd ..",
-    "postdeploy": "git subtree push --prefix server origin railway-backend"
+    "deploy": "cd client && yarn deploy",
+    "postdeploy": "git subtree --prefix server push origin/railway-backend"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
