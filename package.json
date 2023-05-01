@@ -10,8 +10,8 @@
     "start": "node server.js",
     "install:all": "yarn install && yarn install --prefix client",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "predeploy": "yarn build --prefix client",
-    "deploy": "echo 'still working on that'"
+    "predeploy": "rm -rf docs && cd client && yarn deploy",
+    "deploy": "git commit . -m 'auto-deploy' && git push origin master"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
