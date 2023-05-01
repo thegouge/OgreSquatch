@@ -8,11 +8,13 @@
     "client": "npm run start --prefix client",
     "build": "yarn install",
     "start": "node server.js",
-    "install:all": "yarn install && yarn install --prefix client",
+    "install:server": "cd server && yarn install",
+    "install:client": "cd client && yarn install",
+    "install:all": "yarn install:server && yarn install:client",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
     "predeploy": "yarn install:all",
     "deploy": "cd client && yarn deploy",
-    "postdeploy": "git subtree --prefix server push origin/railway-backend"
+    "postdeploy": "git subtree --prefix server push origin railway-backend"
   },
   "author": "thegouge <thegouge42@gmail.com> (https://thegouge.github.io)",
   "license": "ISC",
