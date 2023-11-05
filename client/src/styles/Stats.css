@@ -7,23 +7,28 @@
 #chosen-hero {
 	--background-overlay: rgba(266, 266, 266, 0.6);
 
-	height: 66%;
 	background-color: rgb(226, 226, 226);
 	border: 2px solid var(--logo-silver);
+	padding: 10px;
+	transition: 0.3s;
+	margin-bottom: 5px;
+}
+
+.hero-overlay {
+	background: rgba(266, 266, 266, 0.6);
+	padding: 20px 0;
 	display: grid;
 	grid-template-areas:
 		'hero printout'
 		'medals printout';
 	grid-template-columns: 66% 34%;
-	transition: 0.3s;
-	margin-bottom: 5px;
 }
 
 .hero {
 	grid-area: hero;
 	margin: 0;
 	text-align: left;
-	background: var(--background-overlay);
+	/* background: var(--background-overlay); */
 }
 .hero-name {
 	font-size: 40px;
@@ -38,7 +43,7 @@
 		'kills deaths'
 		'assists quote';
 	padding: 5px;
-	background: var(--background-overlay);
+	/* background: var(--background-overlay); */
 	height: 100%;
 }
 
@@ -54,7 +59,7 @@
 
 .stat-title {
 	position: absolute;
-	bottom: 15%;
+	bottom: 5%;
 	left: 0;
 	z-index: 1;
 	font-size: 290%;
@@ -73,7 +78,7 @@
 	grid-area: medals;
 	display: flex;
 	justify-content: space-around;
-	background: var(--background-overlay);
+	/* background: var(--background-overlay); */
 }
 
 .medal-title {
@@ -89,7 +94,7 @@
 
 .medal-number {
 	position: relative;
-	bottom: 15%;
+	bottom: 20%;
 	font-size: 200%;
 	text-align: center;
 	z-index: 10;

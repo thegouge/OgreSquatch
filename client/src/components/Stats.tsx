@@ -33,57 +33,59 @@ export function Stats({ heroData, playMode, changePlayMode }: StatPropTypes) {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <article className="hero">
-          <h4 className="hero-name">{formatHeroName(heroData.name)}</h4>
-        </article>
-        <article className="printout">
-          <div className="printed-stat">
-            <span className="stat-title">Time</span>
-            <span className="stat-stat">{data.timePlayed}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Kills</span>
-            <span className="stat-stat">{data.eliminations}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Deaths</span>
-            <span className="stat-stat">{data.deaths}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Assists</span>
-            <span className="stat-stat">{data.assists}</span>
-          </div>
-          <div className="printed-stat">
-            <span className="stat-title">Wins</span>
-            <span className="stat-stat">{data.gamesWon}</span>
-          </div>
-        </article>
-        <article className="medals">
-          <div className="printed-medal">
-            <img
-              src={bronzeMedal}
-              alt="bronze medal background"
-              className="medal-img"
-            />
-            <p className="medal-number">{data.medals.bronze}</p>
-          </div>
-          <div className="printed-medal">
-            <img
-              src={silverMedal}
-              alt="silver medal background"
-              className="medal-img"
-            />
-            <p className="medal-number">{data.medals.silver}</p>
-          </div>
-          <div className="printed-medal">
-            <img
-              src={goldMedal}
-              alt="gold medal background"
-              className="medal-img"
-            />
-            <p className="medal-number">{data.medals.gold}</p>
-          </div>
-        </article>
+        <div className='hero-overlay'>
+          <article className="hero">
+            <h4 className="hero-name">{formatHeroName(heroData.name)}</h4>
+          </article>
+          <article className="printout">
+            <div className="printed-stat">
+              <span className="stat-title">Time</span>
+              <span className="stat-stat">{data.timePlayed}</span>
+            </div>
+            <div className="printed-stat">
+              <span className="stat-title">Kills</span>
+              <span className="stat-stat">{data.eliminations}</span>
+            </div>
+            <div className="printed-stat">
+              <span className="stat-title">Deaths</span>
+              <span className="stat-stat">{data.deaths}</span>
+            </div>
+            <div className="printed-stat">
+              <span className="stat-title">Assists</span>
+              <span className="stat-stat">{data.assists}</span>
+            </div>
+            <div className="printed-stat">
+              <span className="stat-title">Wins</span>
+              <span className="stat-stat">{data.gamesWon}</span>
+            </div>
+          </article>
+          <article className="medals">
+            <div className="printed-medal">
+              <img
+                src={bronzeMedal}
+                alt="bronze medal background"
+                className="medal-img"
+              />
+              <p className="medal-number">{data.medals.bronze}</p>
+            </div>
+            <div className="printed-medal">
+              <img
+                src={silverMedal}
+                alt="silver medal background"
+                className="medal-img"
+              />
+              <p className="medal-number">{data.medals.silver}</p>
+            </div>
+            <div className="printed-medal">
+              <img
+                src={goldMedal}
+                alt="gold medal background"
+                className="medal-img"
+              />
+              <p className="medal-number">{data.medals.gold}</p>
+            </div>
+          </article>
+        </div>
       </div>
     )
   }

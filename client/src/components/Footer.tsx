@@ -3,7 +3,7 @@ import alexPhoto from '../assets/images/me.jpg?url'
 
 export function Footer() {
   return (
-    <footer className="" data-test="Footer">
+    <footer data-test="Footer">
       <div className="credit">
         <a href="https://thegouge.github.io" className="alex-link">
           <img

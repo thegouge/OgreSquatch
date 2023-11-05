@@ -79,11 +79,11 @@ export function Search() {
   }
 
   return (
-    <section id="profile-search" data-test="searchComp">
+    <section id="profile-search" className='mx-auto' data-test="searchComp">
       <h2 className="search-header">
         Find out if your friends need to stay on the payload!
       </h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="py-6">
         <div className="form-content">
           <div className="form-group">
             <select
@@ -136,7 +136,7 @@ export function Search() {
         </div>
         <input
           type="submit"
-          className="overwatch-button-primary p-2 text-2xl"
+          className="overwatch-button-primary p-2 text-2xl mt-6"
           onClick={authenticateSearch}
         />
       </form>

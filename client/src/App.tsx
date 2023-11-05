@@ -8,7 +8,7 @@ export default function App() {
     <div className="App" data-test="App">
       <ToastContainer autoClose={8000} />
       <Header />
-      <main>
+      <main className='pb-20'>
         <Outlet />
       </main>
       <Footer />
