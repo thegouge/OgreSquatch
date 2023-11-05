@@ -18,7 +18,7 @@ export function Stats({ heroData, playMode, changePlayMode }: StatPropTypes) {
   const data = heroData[playMode]
   let chosenHeroStats
 
-  if (data === null) {
+  if (data === null || data === "no data!") {
     chosenHeroStats = (
       <div className="no-stats" id="profile-info" data-test="statsComp">
         {heroData.name} hasn't been played in {playMode} play!
